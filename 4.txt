@@ -1,0 +1,15 @@
+  <div class="input-output-block " id="ninth">
+            <h2 class="heading-secondary">Example 9</h2>
+            <div class="input">
+                <h2 class="heading-tertiary">Input:</h2>
+                <p class="hero-description"> </p>
+
+            </div>
+            <div>
+                <h2 class="heading-tertiary">Output:</h2>
+                <p class="hero-description">
+
+                    
+                </p>
+            </div>
+        </div>

@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <style></style>
+</head>
+
+<body class="container ">
+    <header>
+        <div class="header-1">
+            <div class="python">Python</div>
+            <nav class="navigation__nav">
+                <ul class="navigation__list">
+                    <li class="navigation__item"><a href="./1.html">All</a></li>
+                    <li class="navigation__item"><a href="./1.html">Fundamental</a></li>
+                    <li class="navigation__item"><a href="./1.html">String</a></li>
+                    <li class="navigation__item"><a href="./1.html">List</a></li>
+                    <li class="navigation__item"><a href="./1.html">Basics</a></li>
+                    <li class="navigation__item"><a href="./1.html">Dictionary</a></li>
+                    <li class="navigation__item"><a href="./1.html">OOPS</a></li>
+                    <li class="navigation__item"><a href="./1.html">Others</a></li>
+                </ul>
+            </nav>
+        </div>
+
+    </header>
+    <main class="container">
+
+
+        <h1 class="heading-primary">boolean
+
+        </h1>
+        <ul class="list-examples">
+            <li><a href="#first">Ex 1</a></li>
+            <li><a href="#second">Ex 2</a></li>
+            <li><a href="#third">Ex 3</a></li>
+            <li><a href="#forth">Ex 4</a></li>
+            <li><a href="#fifth">Ex 5</a></li>
+            <li><a href="#sixth">Ex 6</a></li>
+            <li><a href="#seventh">Ex 7</a></li>
+            <li class="navigation__item"><a href="./1.html">Home</a></li>
+            <!-- <li><a href="#eigth">Ex 8</a></li>
+            <li><a href="#ninth">Ex 9</a></li>
+            <li><a href="#tenth">Ex 10</a></li> -->
+        </ul>
+        <div class="input-output-block first" id="first">
+            <h2 class="heading-secondary">Example 1</h2>
+            <div class="input">
+                <h2 class="heading-tertiary">Input:</h2>
+                <p class="hero-description"> print(bool(False)) <br>
+                    print(bool(0)) <br>
+                    print(bool(0.0)) <br>
+                    print(bool(None)) <br>
+                </p>
+            </div>
+            <div>
+                <h2 class="heading-tertiary">Output:</h2>
+                <p class="hero-description">False <br>
+                    False <br>
+                    False <br>
+                    False <br>
+                </p>
+            </div>
+        </div>
+        <div class="input-output-block " id="second">
+            <h2 class="heading-secondary">Example 2</h2>
+            <div class="input">
+                <h2 class="heading-tertiary">Input:</h2>
+                <p class="hero-description"> print(bool(True)) <br>
+                    print(bool(1)) <br>
+                    print(bool(1.0)) <br>
+                    print(bool("STRING1")) <br>
+                    print(bool([1,2])) <br>
+                    print(bool((1,2))) <br>
+                </p>
+            </div>
+            <div>
+                <h2 class="heading-tertiary">Output:</h2>
+                <p class="hero-description"> True <br>
+                    True <br>
+                    True <br>
+                    True <br>
+                    True <br>
+                    True <br>
+                </p>
+            </div>
+        </div>
+        <div class="input-output-block " id="third">
+            <h2 class="heading-secondary">Example 3</h2>
+            <div class="input">
+                <h2 class="heading-tertiary">Input:</h2>
+                <p class="hero-description">
+                    bool('0') <br>
+                </p>
+            </div>
+            <div>
+                <h2 class="heading-tertiary">Output:</h2>
+                <p class="hero-description">
+                    True <br>
+
+                </p>
+            </div>
+        </div>
+        <div class="input-output-block " id="forth">
+            <h2 class="heading-secondary">Example 4</h2>
+            <div class="input">
+                <h2 class="heading-tertiary">Input:</h2>
+                <p class="hero-description">print(bool([])) <br>
+                    print(bool(())) <br>
+                    print(bool({})) <br>
+                    print(bool("")) <br>
+            </div>
+            <div>
+                <h2 class="heading-tertiary">Output:</h2>
+                <p class="hero-description">False <br>
+                    False <br>
+                    False <br>
+                    False <br>
+                </p>
+            </div>
+
+        </div>
+        <div class="input-output-block " id="fifth">
+            <h2 class="heading-secondary">Example 5</h2>
+            <div class="input">
+                <h2 class="heading-tertiary">Input:</h2>
+                <p class="hero-description">print(bool(" ")) <br>
+                    print(bool(0.00000000000000000000000000000000000000000000001)) <br>
+            </div>
+            <div>
+                <h2 class="heading-tertiary">Output:</h2>
+                <p class="hero-description"> True <br>
+                    True <br>
+                </p>
+            </div>
+        </div>
+        <div class="input-output-block " id="sixth">
+            <h2 class="heading-secondary">Example 5</h2>
+            <div class="input">
+                <h2 class="heading-tertiary">Input:</h2>
+                <p class="hero-description"> bool(complex(0.0,0.0001)) <br></p>
+            </div>
+            <div>
+                <h2 class="heading-tertiary">Output:</h2>
+                <p class="hero-description">
+                    True <br>
+                </p>
+
+                </p>
+            </div>
+        </div>
+        <div class="input-output-block " id="seventh">
+            <h2 class="heading-secondary">Example 7</h2>
+            <div class="input">
+                <h2 class="heading-tertiary">Input:</h2>
+                <p class="hero-description">
+                    a = bool(False) <br>
+                    b = bool(0) <br>
+                    c = bool(0.0) <br>
+                    d = bool([]) <br>
+                    e = bool(()) <br>
+                    print(id(a)) <br>
+                    print(id(b)) <br>
+                    print(id(c)) <br>
+                    print(id(d)) <br>
+                    print(id(e)) <br> </p>
+            </div>
+            <div>
+                <h2 class="heading-tertiary">Output:</h2>
+                <p class="hero-description">
+                    101368900768768 <br>
+                    101368900768768 <br>
+                    101368900768768 <br>
+                    101368900768768 <br>
+                    101368900768768 <br>
+                </p>
+            </div>
+        </div>
+        <!-- <div class="input-output-block " id="eight">
+            <h2 class="heading-secondary">Example 8</h2>
+            <div class="input">
+                <h2 class="heading-tertiary">Input:</h2>
+                <p class="hero-description"> dict_d = {(1,2):"str",2:4} <br>
+                    print(dict_d) <br></p>
+            </div>
+            <div>
+                <h2 class="heading-tertiary">Output:</h2>
+
+
+                <p class="hero-description">
+                    {(1, 2): 'str', 2: 4} <br>
+                </p>
+            </div>
+        </div>
+        <div class="input-output-block " id="ninth">
+            <h2 class="heading-secondary">Example 9</h2>
+            <div class="input">
+                <h2 class="heading-tertiary">Input:</h2>
+                <p class="hero-description"> # dictionary as a key <br>
+                    dict_e = {{"Virat":12, "rohit":12}:"Indian Players"} <br>
+                    dict_e <br></p>
+
+            </div>
+            <div>
+                <h2 class="heading-tertiary">Output:</h2>
+                <p class="hero-description">
+
+                    # dictionary as a key <br>
+                    dict_e = {{"Virat":12, "rohit":12}:"Indian Players"} <br>
+                    TypeError: unhashable type: 'dict' <br>
+
+                </p>
+            </div>
+        </div>
+        <div class="input-output-block " id="tenth">
+            <h2 class="heading-secondary">Example 10</h2>
+            <div class="input">
+                <h2 class="heading-tertiary">Input:</h2>
+                <p class="hero-description"> # dictionary as a value <br>
+                    dict_e = {"Indian Players": {"Virat":12, "rohit":12}} <br>
+                    dict_e <br>
+                </p>
+
+            </div>
+            <div>
+                <h2 class="heading-tertiary">Output:</h2>
+                <p class="hero-description">
+                    {'Indian Players': {'Virat': 12, 'rohit': 12}}<br>
+                </p>
+            </div>
+        </div> -->
+    </main>
+</body>
+
+</html>

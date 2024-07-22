@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <style></style>
+</head>
+
+<body class="container ">
+    <header>
+        <div class="header-1">
+            <div class="python">Python</div>
+            <nav class="navigation__nav">
+                <ul class="navigation__list">
+                    <li class="navigation__item"><a href="./1.html">All</a></li>
+                    <li class="navigation__item"><a href="./1.html">Fundamental</a></li>
+                    <li class="navigation__item"><a href="./1.html">String</a></li>
+                    <li class="navigation__item"><a href="./1.html">List</a></li>
+                    <li class="navigation__item"><a href="./1.html">Basics</a></li>
+                    <li class="navigation__item"><a href="./1.html">Dictionary</a></li>
+                    <li class="navigation__item"><a href="./1.html">OOPS</a></li>
+                    <li class="navigation__item"><a href="./1.html">Others</a></li>
+                </ul>
+            </nav>
+        </div>
+
+    </header>
+    <main class="container">
+
+
+        <h1 class="heading-primary">unicode
+
+        </h1>
+        <ul class="list-examples">
+            <li><a href="#first">Ex 1</a></li>
+            <li><a href="#second">Ex 2</a></li>
+            <li><a href="#third">Ex 3</a></li>
+            <li><a href="#forth">Ex 4</a></li>
+            <li class="navigation__item"><a href="./1.html">Home</a></li>
+            <!-- <li><a href="#fifth">Ex 5</a></li>
+            <li><a href="#sixth">Ex 6</a></li>
+            <li><a href="#seventh">Ex 7</a></li>
+            <li><a href="#eigth">Ex 8</a></li>
+            <li><a href="#ninth">Ex 9</a></li>
+            <li><a href="#tenth">Ex 10</a></li> -->
+        </ul>
+        <div class="input-output-block first" id="first">
+            <h2 class="heading-secondary">Example 1</h2>
+            <div class="input">
+                <h2 class="heading-tertiary">Input:</h2>
+                <p class="hero-description"> <br>
+                    Unicode Representation <br>
+                    alphaNumeric_string = "abcdefghxyzABCDEFGHXYZ0123456789" <br>
+                    <br>
+                    for c in alphaNumeric_string: <br>
+                    &nbsp; print("character: ", c) <br>
+                    &nbsp; print("unicode value: ", ord(c)) <br>
+                </p>
+            </div>
+            <div>
+                <h2 class="heading-tertiary">Output:</h2>
+                <p class="hero-description">
+
+                    character: a <br>
+                    unicode value: 97 <br>
+                    character: b <br>
+                    unicode value: 98 <br>
+                    character: c <br>
+                    unicode value: 99 <br>
+                    character: d <br>
+                    unicode value: 100 <br>
+                    character: e <br>
+                    unicode value: 101 <br>
+                    character: f <br>
+                    unicode value: 102 <br>
+                    character: g <br>
+                    unicode value: 103 <br>
+                    character: h <br>
+                    unicode value: 104 <br>
+                    character: x <br>
+                    unicode value: 120 <br>
+                    character: y <br>
+                    unicode value: 121 <br>
+                    character: z <br>
+                    unicode value: 122 <br>
+                    character: A <br>
+                    unicode value: 65 <br>
+                    character: B <br>
+                    unicode value: 66 <br>
+                    character: C <br>
+                    unicode value: 67 <br>
+                    character: D <br>
+                    unicode value: 68 <br>
+                    character: E <br>
+                    unicode value: 69 <br>
+                    character: F <br>
+                    unicode value: 70 <br>
+                    character: G <br>
+                    unicode value: 71 <br>
+                    character: H <br>
+                    unicode value: 72 <br>
+                    character: X <br>
+                    unicode value: 88 <br>
+                    character: Y <br>
+                    unicode value: 89 <br>
+                    character: Z <br>
+                    unicode value: 90 <br>
+                    character: 0 <br>
+                    unicode value: 48 <br>
+                    character: 1 <br>
+                    unicode value: 49 <br>
+                    character: 2 <br>
+                    unicode value: 50 <br>
+                    character: 3 <br>
+                    unicode value: 51 <br>
+                    character: 4 <br>
+                    unicode value: 52 <br>
+                    character: 5 <br>
+                    unicode value: 53 <br>
+                    character: 6 <br>
+                </p>
+            </div>
+        </div>
+        <div class="input-output-block " id="second">
+            <h2 class="heading-secondary">Example 2</h2>
+            <div class="input">
+                <h2 class="heading-tertiary">Input:</h2>
+                <p class="hero-description">
+                    english = "VIRAT KOHLI" <br>
+                    tamil = " ராட ேகா " <br>
+                    hindi = "िवराट कोहली" <br>
+                    chinese = "维拉·科利" <br>
+                    print("English Unicode") <br>
+                    for c in english: <br>
+                    &nbsp;print("Character: ", c) <br>
+                    &nbsp;print("Unicode: ", ord(c)) <br>
+                    &nbsp; print("Tamil Unicode") <br>
+                    for c in tamil: <br>
+                    &nbsp; print("Character: ", c) <br>
+                    &nbsp; print("Unicode: ", ord(c)) <br>
+                    &nbsp; print("Hindi Unicode") <br>
+                    for c in hindi: <br>
+                    &nbsp; print("Character: ", c) <br>
+                    &nbsp; print("Unicode: ", ord(c)) <br>
+                    &nbsp; print("Chinese Unicode") <br>
+                    for c in chinese: <br>
+                    &nbsp; print("Character: ", c) <br>
+                    &nbsp; print("Unicode: ", ord(c)) <br>
+                </p>
+            </div>
+            <div>
+                <h2 class="heading-tertiary">Output:</h2>
+                <p class="hero-description">
+                    English Unicode <br>
+                    Character: V <br>
+                    Unicode: 86 <br>
+                    Character: I <br>
+                    Unicode: 73 <br>
+                    Character: R <br>
+                    Unicode: 82 <br>
+                    Character: A <br>
+                    Unicode: 65 <br>
+                    Character: T <br>
+                    Unicode: 84 <br>
+                    Character: <br>
+                    Unicode: 32 <br>
+                    Character: K <br>
+                    Unicode: 75 <br>
+                    Character: O <br>
+                    Unicode: 79 <br>
+                    Character: H <br>
+                    Unicode: 72 <br>
+                    Character: L <br>
+                    Unicode: 76 <br>
+                    Character: I <br>
+                    Unicode: 73 <br>
+                    Tamil Unicode <br>
+                    Character: வ <br>
+                    Unicode: 2997 <br>
+                    Character: ◌ி <br>
+                    Unicode: 3007 <br>
+                    Character: ர <br>
+                    Unicode: 2992 <br>
+                    Character: ◌ா <br>
+                    Unicode: 3006 <br>
+                    Character: ட <br>
+                    Unicode: 2975 <br>
+                    Character: ◌ <br>
+                    Unicode: 3021 <br>
+                    Character: <br>
+                    Unicode: 32 <br>
+                    Character: க <br>
+                    Unicode: 2965 <br>
+                    Character: ே◌ா <br>
+                    Unicode: 3019 <br>
+                    Character: ல <br>
+                    Unicode: 2994 <br>
+                    Character: ◌ி <br>
+                    Unicode: 3007 <br>
+                    Hindi Unicode <br>
+                    Character: व <br>
+                    Unicode: 2357 <br>
+                    Character: ि◌ <br>
+                    Unicode: 2367 <br>
+                    Character: र <br>
+                    Unicode: 2352 <br>
+                    Character: ◌ा <br>
+                    Unicode: 2366 <br>
+                    Character: ट <br>
+                    Unicode: 2335 <br>
+                    Character: <br>
+                </p>
+            </div>
+        </div>
+        <div class="input-output-block " id="third">
+            <h2 class="heading-secondary">Example 3</h2>
+            <div class="input">
+                <h2 class="heading-tertiary">Input:</h2>
+                <p class="hero-description">
+                    name = "Venky" <br>
+                    for c in name: <br>
+                    &nbsp;print("character: ",c) <br>
+                    &nbsp;&nbsp; print("unicode value: ", ord(c)) <br>
+                    &nbsp; print("hex value: ",hex(ord(c))) <br>
+                </p>
+            </div>
+            <div>
+                <h2 class="heading-tertiary">Output:</h2>
+                <p class="hero-description">
+
+
+                    character: V <br>
+                    unicode value: 86 <br>
+                    hex value: 0x56 <br>
+                    character: e <br>
+                    unicode value: 101 <br>
+                    hex value: 0x65 <br>
+                    character: n <br>
+                    unicode value: 110 <br>
+                    hex value: 0x6e <br>
+                    character: k <br>
+                    unicode value: 107 <br>
+                    hex value: 0x6b <br>
+                    character: y <br>
+                    unicode value: 121 <br>
+                    hex value: 0x79 <br>
+                    print(int('\x61'))- <br>-------------------------------------------------------------------------
+                    ValueError <br>
+                    Traceback (most recent call last) <br>
+                    ValueError: invalid literal for int() with base 10: 'a' <br>
+
+                </p>
+            </div>
+        </div>
+        <!-- <div class="input-output-block " id="forth">
+            <h2 class="heading-secondary">Example 4</h2>
+            <div class="input">
+                <h2 class="heading-tertiary">Input:</h2>
+                <p class="hero-description"></p>
+            </div>
+            <div>
+                <h2 class="heading-tertiary">Output:</h2>
+                <p class="hero-description">
+                </p>
+            </div>
+
+        </div>
+        <div class="input-output-block " id="fifth">
+            <h2 class="heading-secondary">Example 5</h2>
+            <div class="input">
+                <h2 class="heading-tertiary">Input:</h2>
+                <p class="hero-description"></p>
+            </div>
+            <div>
+                <h2 class="heading-tertiary">Output:</h2>
+                <p class="hero-description">
+                </p>
+            </div>
+        </div>
+        <div class="input-output-block " id="sixth">
+            <h2 class="heading-secondary">Example 5</h2>
+            <div class="input">
+                <h2 class="heading-tertiary">Input:</h2>
+                <p class="hero-description"> </p>
+            </div>
+            <div>
+                <h2 class="heading-tertiary">Output:</h2>
+                <p class="hero-description"> </p>
+                </p>
+            </div>
+        </div>
+        <div class="input-output-block " id="seventh">
+            <h2 class="heading-secondary">Example 7</h2>
+            <div class="input">
+                <h2 class="heading-tertiary">Input:</h2>
+                <p class="hero-description">
+                </p>
+            </div>
+            <div>
+                <h2 class="heading-tertiary">Output:</h2>
+                <p class="hero-description">
+
+                </p>
+            </div>
+        </div>
+        <div class="input-output-block " id="eight">
+            <h2 class="heading-secondary">Example 8</h2>
+            <div class="input">
+                <h2 class="heading-tertiary">Input:</h2>
+                <p class="hero-description"></p>
+            </div>
+            <div>
+                <h2 class="heading-tertiary">Output:</h2>
+
+
+                <p class="hero-description">
+                </p>
+            </div>
+        </div>
+        <div class="input-output-block " id="ninth">
+            <h2 class="heading-secondary">Example 9</h2>
+            <div class="input">
+                <h2 class="heading-tertiary">Input:</h2>
+                <p class="hero-description"> </p>
+
+            </div>
+            <div>
+                <h2 class="heading-tertiary">Output:</h2>
+                <p class="hero-description">
+
+
+                </p>
+            </div>
+        </div>
+        <div class="input-output-block " id="tenth">
+            <h2 class="heading-secondary">Example 10</h2>
+            <div class="input">
+                <h2 class="heading-tertiary">Input:</h2>
+                <p class="hero-description">
+                </p>
+
+            </div>
+            <div>
+                <h2 class="heading-tertiary">Output:</h2>
+                <p class="hero-description">
+                </p>
+            </div>
+        </div> -->
+    </main>
+</body>
+
+</html>

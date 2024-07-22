@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <style></style>
+</head>
+
+<body class="container ">
+    <header>
+        <div class="header-1">
+            <div class="python">Python</div>
+            <nav class="navigation__nav">
+                <ul class="navigation__list">
+                    <li class="navigation__item"><a href="./1.html">All</a></li>
+                    <li class="navigation__item"><a href="./1.html">Fundamental</a></li>
+                    <li class="navigation__item"><a href="./1.html">String</a></li>
+                    <li class="navigation__item"><a href="./1.html">List</a></li>
+                    <li class="navigation__item"><a href="./1.html">Basics</a></li>
+                    <li class="navigation__item"><a href="./1.html">Dictionary</a></li>
+                    <li class="navigation__item"><a href="./1.html">OOPS</a></li>
+                    <li class="navigation__item"><a href="./1.html">Others</a></li>
+                </ul>
+            </nav>
+        </div>
+
+    </header>
+    <main class="container">
+
+
+        <h1 class="heading-primary">dictionary
+
+        </h1>
+        <ul class="list-examples">
+            <li><a href="#first">Ex 1</a></li>
+            <li><a href="#second">Ex 2</a></li>
+            <li><a href="#third">Ex 3</a></li>
+            <li><a href="#forth">Ex 4</a></li>
+            <li><a href="#fifth">Ex 5</a></li>
+            <li><a href="#sixth">Ex 6</a></li>
+            <li><a href="#seventh">Ex 7</a></li>
+            <li><a href="#eigth">Ex 8</a></li>
+            <li><a href="#ninth">Ex 9</a></li>
+            <li><a href="#tenth">Ex 10</a></li>
+            <li class="navigation__item"><a href="./1.html">Home</a></li>
+        </ul>
+        <div class="input-output-block first" id="first">
+            <h2 class="heading-secondary">Example 1</h2>
+            <div class="input">
+                <h2 class="heading-tertiary">Input:</h2>
+                <p class="hero-description">
+                    # use of "nonlocal" keyword comes into picture <br>
+                    def func_outer(): <br>
+                    &nbsp; # code block - outer func <br>
+                    &nbsp; v1 = 1000 # local variable to outer function <br>
+                    &nbsp; def func_inner(): <br>
+                    &nbsp;&nbsp; nonlocal v1 # local variable to inner function <br>
+                    &nbsp;&nbsp; v1 += 1000 <br>
+                    &nbsp;&nbsp;print("Inner func: v1 -> {}".format(v1)) <br>
+                    &nbsp; func_inner() <br>
+                    &nbsp; print("Outer Func: v1-->", v1) # v1 -> 2000 <br>
+                    func_outer() <br>
+                    print("in main code: v1-->",v1) <br>
+                </p>
+            </div>
+            <div>
+                <h2 class="heading-tertiary">Output:</h2>
+                <p class="hero-description">
+                    Inner func: v1 -> 2000
+                    Outer Func: v1--> 2000 <br>
+                    13 func_outer()---> 14 print("in main code: v1-->",v1) <br>
+                    NameError: name 'v1' is not defined <br>
+                </p>
+            </div>
+        </div>
+        <div class="input-output-block " id="second">
+            <h2 class="heading-secondary">Example 2</h2>
+            <div class="input">
+                <h2 class="heading-tertiary">Input:</h2>
+                <p class="hero-description">
+                    def func_outer(): <br>
+                    &nbsp; # code block - outer func <br>
+                    &nbsp; v1 = 1000 # local variable to outer function <br>
+                    &nbsp; def func_inner(): <br>
+                    &nbsp;&nbsp; # local variable to inner function <br>
+                    &nbsp;&nbsp; v1 = 1000 <br>
+                    &nbsp;&nbsp; v1 += 1000 <br>
+                    &nbsp;&nbsp; print("Inner func: v1 -> {}".format(v1)) <br>
+                    &nbsp; func_inner() <br>
+                    &nbsp; print("Outer Func: v1-->", v1) # v1 -> 2000 <br>
+                    func_outer() <br>
+                    print("main code: v1-->", v1) <br>
+                </p>
+            </div>
+            <div>
+                <h2 class="heading-tertiary">Output:</h2>
+                <p class="hero-description">
+                    Inner func: v1 -> 2000 <br>
+                    Outer Func: v1--> 1000 <br>
+                    11 <br>
+                    12 func_outer()---> 13 print("main code: v1-->", v1) <br>
+                    NameError: name 'v1' is not defined <br>
+                </p>
+            </div>
+        </div>
+        <div class="input-output-block " id="third">
+            <h2 class="heading-secondary">Example 3</h2>
+            <div class="input">
+                <h2 class="heading-tertiary">Input:</h2>
+                <p class="hero-description">
+                    def func_outer(): <br>
+                    &nbsp;# code block - outer func <br>
+                    &nbsp; v1 = 1000 # local variable to outer function <br>
+                    &nbsp; def func_inner(): <br>
+                    &nbsp;&nbsp; # local variable to inner function <br>
+                    &nbsp;&nbsp; global v1 <br>
+                    &nbsp;&nbsp;v1 = 5000 <br>
+                    &nbsp;&nbsp;v1 += 1000 <br>
+                    &nbsp;&nbsp; print("Inner func: v1 -> {}".format(v1)) <br>
+                    &nbsp;func_inner() <br>
+                    &nbsp;print("Outer Func: v1-->", v1) # v1 -> 2000 <br>
+                    func_outer() <br>
+                    print("main code: v1-->", v1) <br>
+                </p>
+            </div>
+            <div>
+                <h2 class="heading-tertiary">Output:</h2>
+                <p class="hero-description">
+                    Inner func: v1 -> 6000 <br>
+                    Outer Func: v1--> 1000 <br>
+                    main code: v1--> 6000 <br>
+                </p>
+            </div>
+        </div>
+        <div class="input-output-block " id="forth">
+            <h2 class="heading-secondary">Example 4</h2>
+            <div class="input">
+                <h2 class="heading-tertiary">Input:</h2>
+                <p class="hero-description">
+                    def func_outer(): <br>
+                    &nbsp;# code block - outer func <br>
+                    &nbsp;v2 = 1000 # local variable to outer function <br>
+                    &nbsp;def func_inner(): <br>
+                    &nbsp;&nbsp; # local variable to inner function <br>
+                    &nbsp;&nbsp;nonlocal v2 <br>
+                    &nbsp;&nbsp; v2 += 1000 <br>
+                    &nbsp;&nbsp; print("Inner func: v2 -> {}".format(v2)) <br>
+                    &nbsp;func_inner() <br>
+                    &nbsp;print("Outer Func: v2-->", v2) # v1 -> 2000 <br>
+                    func_outer() <br>
+                    print("main code: v1-->", v2) <br>
+                </p>
+            </div>
+            <div>
+                <h2 class="heading-tertiary">Output:</h2>
+                <p class="hero-description">
+                    Inner func: v2 -> 2000 <br>
+                    Outer Func: v2--> 2000 <br>
+                    func_outer()---> 13 print("main code: v1-->", v2) <br>
+                    NameError: name 'v2' is not defined <br>
+                </p>
+            </div>
+
+        </div>
+        <div class="input-output-block " id="fifth">
+            <h2 class="heading-secondary">Example 5</h2>
+            <div class="input">
+                <h2 class="heading-tertiary">Input:</h2>
+                <p class="hero-description">
+                    def func_outer(): <br>
+                    &nbsp;# code block - outer func <br>
+                    &nbsp; v2 = 1000 # local variable to outer function <br>
+                    &nbsp; def func_inner(): <br>
+                    &nbsp;&nbsp; # local variable to inner function <br>
+                    &nbsp;&nbsp; nonlocal v3 <br>
+                    &nbsp;&nbsp; v2 += 1000 <br>
+                    &nbsp;&nbsp; print("Inner func: v2 -> {}".format(v2)) <br>
+                    &nbsp; func_inner() <br>
+                    &nbsp;print("Outer Func: v2-->", v2) # v1 -> 2000 <br>
+                    func_outer() <br>
+                    print("main code: v1-->", v2) <br>
+                </p>
+            </div>
+            <div>
+                <h2 class="heading-tertiary">Output:</h2>
+                <p class="hero-description">
+                    nonlocal v3 <br>
+                    ^ <br>
+                    SyntaxError: no binding for nonlocal 'v3' found <br>
+                </p>
+            </div>
+        </div>
+        <div class="input-output-block " id="sixth">
+            <h2 class="heading-secondary">Example 5</h2>
+            <div class="input">
+                <h2 class="heading-tertiary">Input:</h2>
+                <p class="hero-description">
+                    def func_outer():
+                    &nbsp; # code block - outer func
+                    &nbsp; v2 = 1000 # local variable to outer function
+                    &nbsp; def func_inner(): <br>
+                    &nbsp;&nbsp; # local variable to inner function <br>
+                    &nbsp;&nbsp;v2 = 5000 # local variable to inner function <br>
+                    &nbsp;&nbsp;print("Inner func: v2 -> {}".format(v2)) <br>
+                    &nbsp;&nbsp;def func_insideInner(): <br>
+                    &nbsp;&nbsp; &nbsp;nonlocal v2 <br>
+                    &nbsp;&nbsp;&nbsp; print("Func inside inner: -->",v2) <br>
+                    &nbsp;&nbsp;func_insideInner() <br>
+                    &nbsp;func_inner() <br>
+                    &nbsp;print("Outer Func: v2-->", v2) # v1 -> 2000 <br>
+                    func_outer() <br>
+                </p>
+            </div>
+            <div>
+                <h2 class="heading-tertiary">Output:</h2>
+                <p class="hero-description">
+                    Inner func: v2 -> 5000 <br>
+                    Func inside inner: --> 5000 <br>
+                    Outer Func: v2--> 1000 <br>
+                </p>
+                </p>
+            </div>
+        </div>
+        <div class="input-output-block " id="seventh">
+            <h2 class="heading-secondary">Example 7</h2>
+            <div class="input">
+                <h2 class="heading-tertiary">Input:</h2>
+                <p class="hero-description">
+                    def func_outer(): <br>
+                    &nbsp; # code block - outer func <br>
+                    &nbsp; v2 = 1000 # local variable to outer function <br>
+                    &nbsp; def func_inner(): <br>
+                    &nbsp;&nbsp; # local variable to inner function <br>
+                    &nbsp;&nbsp; v2 = 5000 # local variable to inner function <br>
+                    &nbsp;&nbsp; print("Inner func: v2 -> {}".format(v2)) <br>
+                    &nbsp;&nbsp; def func_insideInner(): <br>
+                    &nbsp;&nbsp;&nbsp;nonlocal v2 <br>
+                    &nbsp;&nbsp; &nbsp;print("Func inside inner: -->",v2) <br>
+                    &nbsp;&nbsp;func_insideInner() <br>
+                    &nbsp;func_inner() <br>
+                    &nbsp;func_insideInner() <br>
+                    &nbsp;print("Outer Func: v2-->", v2) # v1 -> 2000 <br>
+                    func_outer() <br>
+                </p>
+            </div>
+            <div>
+                <h2 class="heading-tertiary">Output:</h2>
+                <p class="hero-description">
+                    Inner func: v2 -> 5000 <br>
+                    Func inside inner: --> 5000 <br>
+                    15 print("Outer Func: v2-->", v2) # v1 -> 2000 <br>
+                    16 ---> 17 func_outer() <br>
+                    <br>
+                    12 <br>
+                    13 func_inner()---> 14 func_insideInner() <br>
+                    15 print("Outer Func: v2-->", v2) # v1 -> 2000 <br>
+                    16 <br>
+                    NameError: name 'func_insideInner' is not defined <br>
+                </p>
+            </div>
+        </div>
+        <div class="input-output-block " id="eight">
+            <h2 class="heading-secondary">Example 8</h2>
+            <div class="input">
+                <h2 class="heading-tertiary">Input:</h2>
+                <p class="hero-description">
+                    def calculator(a,b): <br>
+                    &nbsp;print("Calculations is printed below: ") <br>
+                    &nbsp;def add(a,b): <br>
+                    &nbsp;&nbsp; print("a+b: -->",a+b) <br>
+
+                    &nbsp;def sub(a,b): <br>
+                    &nbsp;&nbsp; print("a-b: -->",a-b) <br>
+
+                    &nbsp;add(a,b) <br>
+                    &nbsp;sub(a,b) <br>
+                    &nbsp; global expose_add_func <br>
+                    &nbsp; expose_add_func = add <br>
+                    &nbsp; global expose_sub_func <br>
+                </p>
+            </div>
+            <div>
+                <h2 class="heading-tertiary">Output:</h2>
+
+
+                <p class="hero-description">
+                </p>
+            </div>
+        </div>
+        <div class="input-output-block " id="ninth">
+            <h2 class="heading-secondary">Example 9</h2>
+            <div class="input">
+                <h2 class="heading-tertiary">Input:</h2>
+                <p class="hero-description">
+                    def calculator(a,b): <br>
+                    &nbsp; print("Calculations is printed below: ") <br>
+                    &nbsp; def add(a,b): <br>
+                    &nbsp;&nbsp;print("a+b: -->",a+b) <br>
+
+                    &nbsp;def sub(a,b): <br>
+                    &nbsp;&nbsp; print("a-b: -->",a-b) <br>
+
+                    &nbsp;return add <br>
+                    add_fun = calculator(10,15) <br>
+                </p>
+
+            </div>
+            <div>
+                <h2 class="heading-tertiary">Output:</h2>
+                <p class="hero-description">
+
+
+                </p>
+            </div>
+        </div>
+        <div class="input-output-block " id="tenth">
+            <h2 class="heading-secondary">Example 10</h2>
+            <div class="input">
+                <h2 class="heading-tertiary">Input:</h2>
+                <p class="hero-description">
+                    add_fun(12,24) <br>
+                </p>
+
+            </div>
+            <div>
+                <h2 class="heading-tertiary">Output:</h2>
+                <p class="hero-description">
+                    a+b: --> 36 <br>
+                </p>
+            </div>
+        </div>
+    </main>
+</body>
+
+</html>

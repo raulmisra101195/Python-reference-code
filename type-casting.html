@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <style></style>
+</head>
+
+<body class="container ">
+    <header>
+        <div class="header-1">
+            <div class="python">Python</div>
+            <nav class="navigation__nav">
+                <ul class="navigation__list">
+                    <li class="navigation__item"><a href="./1.html">All</a></li>
+                    <li class="navigation__item"><a href="./1.html">Fundamental</a></li>
+                    <li class="navigation__item"><a href="./1.html">String</a></li>
+                    <li class="navigation__item"><a href="./1.html">List</a></li>
+                    <li class="navigation__item"><a href="./1.html">Basics</a></li>
+                    <li class="navigation__item"><a href="./1.html">Dictionary</a></li>
+                    <li class="navigation__item"><a href="./1.html">OOPS</a></li>
+                    <li class="navigation__item"><a href="./1.html">Others</a></li>
+                </ul>
+            </nav>
+        </div>
+
+    </header>
+    <main class="container">
+
+
+        <h1 class="heading-primary">type-casting
+
+        </h1>
+        <ul class="list-examples">
+            <li><a href="#first">Ex 1</a></li>
+            <li><a href="#second">Ex 2</a></li>
+            <li><a href="#third">Ex 3</a></li>
+            <li><a href="#forth">Ex 4</a></li>
+            <li><a href="#fifth">Ex 5</a></li>
+            <li><a href="#sixth">Ex 6</a></li>
+            <li class="navigation__item"><a href="./1.html">Home</a></li>
+        </ul>
+        <div class="input-output-block first" id="first">
+            <h2 class="heading-secondary">Example 1</h2>
+            <div class="input">
+                <h2 class="heading-tertiary">Input:</h2>
+                <p class="hero-description">
+                    Type-Casting <br>
+                    
+                    # implicit type conversion <br>
+                    a = 7 <br>
+                    print(type(a)) <br>
+                    b = 3.0 <br>
+                    print(type(b)) <br>
+                    c = a+b <br>
+                    print(c) <br>
+
+                    print(type(c)) <br>
+                </p>
+            </div>
+            <div>
+                <h2 class="heading-tertiary">Output:</h2>
+                <p class="hero-description">
+                    class 'int' <br>
+                    class 'float' <br>
+                    10.0 <br>
+                    class 'float' <br>
+                </p>
+            </div>
+        </div>
+        <div class="input-output-block " id="second">
+            <h2 class="heading-secondary">Example 2</h2>
+            <div class="input">
+                <h2 class="heading-tertiary">Input:</h2>
+                <p class="hero-description">
+                    # explicit type conversion <br>
+                    a = 7 <br>
+                    b = 3.5 <br>
+                    c = int(a+b) <br>
+                    print(type(a)) <br>
+                    print(type(b)) <br>
+                    print(c) <br>
+                    print(type(c)) <br>
+                </p>
+            </div>
+            <div>
+                <h2 class="heading-tertiary">Output:</h2>
+                <p class="hero-description">
+                    class 'int' <br>
+                    class 'float' <br>
+                    10 <br>
+                    class 'int' <br>
+                </p>
+            </div>
+        </div>
+        <div class="input-output-block " id="third">
+            <h2 class="heading-secondary">Example 3</h2>
+            <div class="input">
+                <h2 class="heading-tertiary">Input:</h2>
+                <p class="hero-description">
+                    # int() <br>
+                    a = 8.5 <br>
+                    i_1 = int(a) <br>
+                    print(i_1) <br>
+                    print(type(i_1)) <br>
+                    #b = "1.5" <br>
+                    #i_2 = int(b) <br>
+                    #print(type(i_2)) # --- this will throw an error <br>
+                    c = "10" <br>
+                    i_3 = int(c) <br>
+                    print(i_3) <br>
+                    print(type(i_3)) <br>
+                    d = "abc" <br>
+                    i_4 = int(d) <br>
+                    print(type(i_4)) <br>
+                </p>
+            </div>
+            <div>
+                <h2 class="heading-tertiary">Output:</h2>
+                <p class="hero-description">
+
+                    8 <br>
+                    class 'int' <br>
+                    10 <br>
+                    class 'int' <br>
+                    ValueError <br>
+                    print(type(i_3)) <br>
+                    d = "abc" <br>
+                    --> i_4 = int(d) <br>
+                    print(type(i_4)) <br>
+                    ValueError: invalid literal for int() with base 10: 'abc' <br>
+                </p>
+            </div>
+        </div>
+        <div class="input-output-block " id="forth">
+            <h2 class="heading-secondary">Example 4</h2>
+            <div class="input">
+                <h2 class="heading-tertiary">Input:</h2>
+                <p class="hero-description">
+                    # float() <br>
+                    a = 8 <br>
+                    f_1 = float(a) <br>
+                    print(f_1) <br>
+                    print(type(f_1)) <br>
+                    b = "10.5" <br>
+                    f_2 = float(b) <br>
+                    print(f_2) <br>
+                    print(type(f_2)) <br>
+                    c = "10" <br>
+                    f_3 = float(c) <br>
+                    print(f_3) <br>
+                    print(type(f_3)) <br>
+                    d = "abc" <br>
+                    f_4 = float(d) <br>
+                    print(type(f_4)) <br>
+                </p>
+            </div>
+            <div>
+                <h2 class="heading-tertiary">Output:</h2>
+                <p class="hero-description">
+                    8.0 <br>
+                    class 'float' <br>
+                    10.5 <br>
+                    class 'float' <br>
+                    10.0 <br>
+                    class 'float'-------------------------------------------------------------------------- <br>
+                    ValueError <br>
+                    Traceback (most recent call last) <br>
+                    print(type(f_3)) <br>
+                    d = "abc" <br>
+                    ---> f_4 = float(d) <br>
+                    print(type(f_4)) <br>
+                    ValueError: could not convert string to float: 'abc' <br>
+                </p>
+            </div>
+
+        </div>
+        <div class="input-output-block " id="fifth">
+            <h2 class="heading-secondary">Example 5</h2>
+            <div class="input">
+                <h2 class="heading-tertiary">Input:</h2>
+                <p class="hero-description"></p>
+            </div>
+            <div>
+                <h2 class="heading-tertiary">Output:</h2>
+                <p class="hero-description">
+                </p>
+            </div>
+        </div>
+        <div class="input-output-block " id="sixth">
+            <h2 class="heading-secondary">Example 5</h2>
+            <div class="input">
+                <h2 class="heading-tertiary">Input:</h2>
+                <p class="hero-description"># str() <br>
+                    a = 8 <br>
+                    print(type(a))
+                    s_1 = str(a) <br>
+                    print(s_1) <br>
+                    print(type(s_1)) <br>
+                    b = 10.5 <br>
+                    print(type(b)) <br>
+                    s_2 = str(b) <br>
+                    print(s_2) <br>
+                    print(type(s_2)) <br>
+                </p>
+            </div>
+            <div>
+                <h2 class="heading-tertiary">Output:</h2>
+                <p class="hero-description">
+                    class 'int' <br>
+                    8 <br>
+                    class 'str' <br>
+                    class 'float' <br>
+                    10.5 <br>
+                    class 'str' <br>
+                </p>
+                </p>
+            </div>
+        </div>
+    </main>
+</body>
+
+</html>

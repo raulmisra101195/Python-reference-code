@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <style></style>
+</head>
+
+<body class="container ">
+    <header>
+        <div class="header-1">
+            <div class="python">Python</div>
+            <nav class="navigation__nav">
+                <ul class="navigation__list">
+                    <li class="navigation__item"><a href="./1.html">All</a></li>
+                    <li class="navigation__item"><a href="./1.html">Fundamental</a></li>
+                    <li class="navigation__item"><a href="./1.html">String</a></li>
+                    <li class="navigation__item"><a href="./1.html">List</a></li>
+                    <li class="navigation__item"><a href="./1.html">Basics</a></li>
+                    <li class="navigation__item"><a href="./1.html">Dictionary</a></li>
+                    <li class="navigation__item"><a href="./1.html">OOPS</a></li>
+                    <li class="navigation__item"><a href="./1.html">Others</a></li>
+                </ul>
+            </nav>
+        </div>
+
+    </header>
+    <main class="container">
+
+
+        <h1 class="heading-primary">padding
+
+        </h1>
+        <ul class="list-examples">
+            <li><a href="#first">Ex 1</a></li>
+            <li><a href="#second">Ex 2</a></li>
+            <li><a href="#third">Ex 3</a></li>
+            <li><a href="#forth">Ex 4</a></li>
+            <li><a href="#fifth">Ex 5</a></li>
+            <li class="navigation__item"><a href="./1.html">Home</a></li>
+        </ul>
+        <div class="input-output-block first" id="first">
+            <h2 class="heading-secondary">Example 1</h2>
+            <div class="input">
+                <h2 class="heading-tertiary">Input:</h2>
+                <p class="hero-description">
+                    # padding <br>
+                    print("Learning padding for decimal number {:10d}".format(12897)) <br>
+                    print("Learning padding for float number {:8.3f}".format(10.5678)) <br>
+                    print("Learning padding for decimal number {:010d}".format(12897)) <br>
+                    print("Learning padding for float number {:08.3f}".format(10.5678)) <br>
+                    print("Learning padding for decimal number {:010d}".format(12897)) <br>
+                    print("Learning padding for float number {:10.3f}".format(10.5678)) <br>
+
+                </p>
+            </div>
+            <div>
+                <h2 class="heading-tertiary">Output:</h2>
+                <p class="hero-description">
+                    Learning padding for decimal number 12897 <br>
+                    Learning padding for float number 10.568 <br>
+                    Learning padding for decimal number 0000012897 <br>
+                    Learning padding for float number 0010.568 <br>
+                    Learning padding for decimal number 0000012897 <br>
+                    Learning padding for float number 10.568 <br>
+
+                </p>
+            </div>
+        </div>
+        <div class="input-output-block " id="second">
+            <h2 class="heading-secondary">Example 2</h2>
+            <div class="input">
+                <h2 class="heading-tertiary">Input:</h2>
+                <p class="hero-description">
+                    # integer with left alignment <br>
+                    print("Left Alignment Integer: {:&lt;5d}".format(12)) <br>
+                    print("Right Alignment Integer: {:>5d}".format(12)) <br>
+                    print("Center Alignment Integer: {:^5d}".format(12)) <br>
+                    print("Left Alignment Integer: {:&lt;05d}".format(12)) <br>
+                    print("Right Alignment Integer: {:>05d}".format(12)) <br>
+                    print("Center Alignment Integer: {:^05d}".format(12)) <br>
+                    print("Center Alignment Integer: {:^06d}".format(12)) <br>
+                    print("Center Alignment Integer: {:^07d}".format(12)) <br>
+                </p>
+            </div>
+            <div>
+                <h2 class="heading-tertiary">Output:</h2>
+                <p class="hero-description">
+                    Left Alignment Integer: 12 <br>
+                    Right Alignment Integer: 12 <br>
+                    Center Alignment Integer: 12 <br>
+                    Left Alignment Integer: 12000 <br>
+                    Right Alignment Integer: 00012 <br>
+                    Center Alignment Integer: 01200 <br>
+                    Center Alignment Integer: 001200 <br>
+                    Center Alignment Integer: 0012000 <br>
+                </p>
+            </div>
+        </div>
+        <div class="input-output-block " id="third">
+            <h2 class="heading-secondary">Example 3</h2>
+            <div class="input">
+                <h2 class="heading-tertiary">Input:</h2>
+                <p class="hero-description">
+                    # strings <br>
+                    print("Left Alignment Integer: {:*&lt;20}".format("Venkatesh")) print("Right Alignment Integer: {:#>
+                    <br>
+                    20}".format("Venkatesh")) <br>
+                    print("Center Alignment Integer: {:0^20}".format("Venkatesh")) <br>
+
+                </p>
+            </div>
+            <div>
+                <h2 class="heading-tertiary">Output:</h2>
+                <p class="hero-description">
+
+                    Left Alignment Integer: Venkatesh*********** <br>
+                    Right Alignment Integer: ###########Venkatesh <br>
+                    Center Alignment Integer: 00000Venkatesh000000 <br>
+
+                </p>
+            </div>
+        </div>
+        <div class="input-output-block " id="forth">
+            <h2 class="heading-secondary">Example 4</h2>
+            <div class="input">
+                <h2 class="heading-tertiary">Input:</h2>
+                <p class="hero-description">
+
+                    # truncating the strings <br>
+                    print("Truncated String: {:.3}".format("Python")) <br>
+                    print("Truncated String: {:.2}".format("Python")) <br>
+                    print("Truncated String with RA: {:*>10.2}".format("Python")) <br>
+                    print("Truncated String with LA: {:*&lt;10.2}".format("Python")) print("Truncated String with LA:
+                    <br>
+                    {:*^10.2}".format("Python")) <br>
+                </p>
+            </div>
+            <div>
+                <h2 class="heading-tertiary">Output:</h2>
+                <p class="hero-description">
+                    Truncated String: Pyt <br>
+                    Truncated String: Py <br>
+                    Truncated String with RA: ********Py <br>
+                    Truncated String with LA: Py******** <br>
+                    Truncated String with LA: ****Py**** <br>
+                </p>
+            </div>
+
+        </div>
+
+    </main>
+</body>
+
+</html>

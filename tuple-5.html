@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <style></style>
+</head>
+
+<body class="container ">
+    <header>
+        <div class="header-1">
+            <div class="python">Python</div>
+            <nav class="navigation__nav">
+                <ul class="navigation__list">
+                    <li class="navigation__item"><a href="./1.html">All</a></li>
+                    <li class="navigation__item"><a href="./1.html">Fundamental</a></li>
+                    <li class="navigation__item"><a href="./1.html">String</a></li>
+                    <li class="navigation__item"><a href="./1.html">List</a></li>
+                    <li class="navigation__item"><a href="./1.html">Basics</a></li>
+                    <li class="navigation__item"><a href="./1.html">Dictionary</a></li>
+                    <li class="navigation__item"><a href="./1.html">OOPS</a></li>
+                    <li class="navigation__item"><a href="./1.html">Others</a></li>
+                </ul>
+            </nav>
+        </div>
+
+    </header>
+    <main class="container">
+
+
+        <h1 class="heading-primary">dictionary
+
+        </h1>
+        <ul class="list-examples">
+            <li><a href="#first">Ex 1</a></li>
+            <li><a href="#second">Ex 2</a></li>
+            <li><a href="#third">Ex 3</a></li>
+            <li><a href="#forth">Ex 4</a></li>
+            <li><a href="#fifth">Ex 5</a></li>
+            <li><a href="#sixth">Ex 6</a></li>
+            <li><a href="#seventh">Ex 7</a></li>
+            <li><a href="#eigth">Ex 8</a></li>
+            <li><a href="#ninth">Ex 9</a></li>
+            <li><a href="#tenth">Ex 10</a></li>
+            <li class="navigation__item"><a href="./1.html">Home</a></li>
+        </ul>
+        <div class="input-output-block first" id="first">
+            <h2 class="heading-secondary">Example 1</h2>
+            <div class="input">
+                <h2 class="heading-tertiary">Input:</h2>
+                <p class="hero-description">
+                    l = ["8948279632687268", "9"] <br>
+                    l.sort() <br>
+                    print(l) <br>
+                </p>
+            </div>
+            <div>
+                <h2 class="heading-tertiary">Output:</h2>
+                <p class="hero-description">
+                    ['8948279632687268', '9'] <br>
+                </p>
+            </div>
+        </div>
+        <div class="input-output-block " id="second">
+            <h2 class="heading-secondary">Example 2</h2>
+            <div class="input">
+                <h2 class="heading-tertiary">Input:</h2>
+                <p class="hero-description">
+
+                    ['8948279632687268', '9'] <br>
+                    l = [" ", "1", "a"] <br>
+                    l.sort(reverse=True) <br>
+                    l <br>
+                </p>
+            </div>
+            <div>
+                <h2 class="heading-tertiary">Output:</h2>
+                <p class="hero-description">
+                    ['a', '1', ' '] <br>
+                </p>
+            </div>
+        </div>
+        <div class="input-output-block " id="third">
+            <h2 class="heading-secondary">Example 3</h2>
+            <div class="input">
+                <h2 class="heading-tertiary">Input:</h2>
+                <p class="hero-description">
+                    ord(" ") <br>
+                    ord("0") <br>
+                    ord("a")</p>
+            </div>
+            <div>
+                <h2 class="heading-tertiary">Output:</h2>
+                <p class="hero-description">
+                    32 <br>
+
+                    48 <br>
+
+                    97 <br>
+
+                </p>
+            </div>
+        </div>
+        <div class="input-output-block " id="forth">
+            <h2 class="heading-secondary">Example 4</h2>
+            <div class="input">
+                <h2 class="heading-tertiary">Input:</h2>
+                <p class="hero-description">
+                    # sort <br>
+                    # sorted <br>
+                    t = (1,2,3,5,7,9,4,12,10) <br>
+                    t.sort() # will fail <br>
+                </p>
+            </div>
+            <div>
+                <h2 class="heading-tertiary">Output:</h2>
+                <p class="hero-description">
+
+                    AttributeError
+                    t = (1,2,3,5,7,9,4,12,10) <br>
+                    6 ----> 7 t.sort() # will fail <br>
+                    AttributeError: 'tuple' object has no attribute 'sort' <br>
+                </p>
+            </div>
+
+        </div>
+        <div class="input-output-block " id="fifth">
+            <h2 class="heading-secondary">Example 5</h2>
+            <div class="input">
+                <h2 class="heading-tertiary">Input:</h2>
+                <p class="hero-description">
+                    sorted(t) # always returns list object <br>
+                    sorted("Venky") <br>
+                </p>
+            </div>
+            <div>
+                <h2 class="heading-tertiary">Output:</h2>
+                <p class="hero-description">
+                    [1, 2, 3, 4, 5, 7, 9, 10, 12] <br>
+                    ['V', 'e', 'k', 'n', 'y'] <br>
+                </p>
+            </div>
+        </div>
+        <div class="input-output-block " id="sixth">
+            <h2 class="heading-secondary">Example 5</h2>
+            <div class="input">
+                <h2 class="heading-tertiary">Input:</h2>
+                <p class="hero-description">
+                    # reverse <br>
+                    l = list("Venkatesh") <br>
+                    print(l) <br>
+                </p>
+            </div>
+            <div>
+                <h2 class="heading-tertiary">Output:</h2>
+                <p class="hero-description"> ' ['V', 'e', 'n', 'k', 'a', 't', 'e', 's', 'h']</p>
+                </p>
+            </div>
+        </div>
+        <div class="input-output-block " id="seventh">
+            <h2 class="heading-secondary">Example 7</h2>
+            <div class="input">
+                <h2 class="heading-tertiary">Input:</h2>
+                <p class="hero-description">
+                    l.reverse() # equivalent to l[::-1] <br>
+                    print(l) # reverse in place <br>
+                </p>
+            </div>
+            <div>
+                <h2 class="heading-tertiary">Output:</h2>
+                <p class="hero-description">
+                    ['h', 's', 'e', 't', 'a', 'k', 'n', 'e', 'V'] <br>
+
+                </p>
+            </div>
+        </div>
+        <div class="input-output-block " id="eight">
+            <h2 class="heading-secondary">Example 8</h2>
+            <div class="input">
+                <h2 class="heading-tertiary">Input:</h2>
+                <p class="hero-description">
+                    list(reversed(l)) # out of place - creates new list <br>
+                    ['V', 'e', 'n', 'k', 'a', 't', 'e', 's', 'h'] <br>
+                    t = tuple("Venkatesh") <br>
+                    t.reverse() <br>
+                </p>
+            </div>
+            <div>
+                <h2 class="heading-tertiary">Output:</h2>
+                t = tuple("Venkatesh") <br>
+                2 ----> 3 t.reverse() <br>
+                AttributeError: 'tuple' object has no attribute 'reverse' <br>
+
+
+                <p class="hero-description">
+                </p>
+            </div>
+        </div>
+        <div class="input-output-block " id="ninth">
+            <h2 class="heading-secondary">Example 9</h2>
+            <div class="input">
+                <h2 class="heading-tertiary">Input:</h2>
+                <p class="hero-description">
+
+                    tuple(reversed(t)) <br>
+                    <br>
+                </p>
+
+            </div>
+            <div>
+                <h2 class="heading-tertiary">Output:</h2>
+                <p class="hero-description">
+                    ('h', 's', 'e', 't', 'a', 'k', 'n', 'e', 'V') <br>
+
+                </p>
+            </div>
+        </div>
+        <div class="input-output-block " id="tenth">
+            <h2 class="heading-secondary">Example 10</h2>
+            <div class="input">
+                <h2 class="heading-tertiary">Input:</h2>
+                <p class="hero-description"> <br>
+                    # count <br>
+                    l = [1,2,3,1,2,4,3,2,1,3,2,1,5,2,1,4,5] <br>
+                    l.count(1) <br>
+
+                    l.count(6) <br>
+                </p>
+
+            </div>
+            <div>
+                <h2 class="heading-tertiary">Output:</h2>
+                <p class="hero-description">
+                    5 <br>
+                    0 <br>
+                </p>
+            </div>
+        </div>
+    </main>
+</body>
+
+</html>

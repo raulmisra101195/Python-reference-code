@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <style></style>
+</head>
+
+<body class="container ">
+    <header>
+        <div class="header-1">
+            <div class="python">Python</div>
+            <nav class="navigation__nav">
+                <ul class="navigation__list">
+                    <li class="navigation__item"><a href="./1.html">All</a></li>
+                    <li class="navigation__item"><a href="./1.html">Fundamental</a></li>
+                    <li class="navigation__item"><a href="./1.html">String</a></li>
+                    <li class="navigation__item"><a href="./1.html">List</a></li>
+                    <li class="navigation__item"><a href="./1.html">Basics</a></li>
+                    <li class="navigation__item"><a href="./1.html">Dictionary</a></li>
+                    <li class="navigation__item"><a href="./1.html">OOPS</a></li>
+                    <li class="navigation__item"><a href="./1.html">Others</a></li>
+                </ul>
+            </nav>
+        </div>
+
+    </header>
+    <main class="container">
+
+
+        <h1 class="heading-primary"> # string formatting operator
+
+        </h1>
+        <ul class="list-examples">
+            <li><a href="#first">Ex 1</a></li>
+            <li><a href="#second">Ex 2</a></li>
+            <li><a href="#third">Ex 3</a></li>
+            <li><a href="#forth">Ex 4</a></li>
+            <li><a href="#fifth">Ex 5</a></li>
+            <li><a href="#sixth">Ex 6</a></li>
+            <li><a href="#seventh">Ex 7</a></li>
+            <li><a href="#eight">Ex 8</a></li>
+            <li><a href="#ninth">Ex 9</a></li>
+            <li><a href="#tenth">Ex 10</a></li>
+            <li><a href="#eleven">Ex 11</a></li>
+            <li><a href="#twelve">Ex 12</a></li>
+            <li class="navigation__item"><a href="./1.html">Home</a></li>
+        </ul>
+        <div class="input-output-block first" id="first">
+            <h2 class="heading-secondary">Example 1</h2>
+            <div class="input">
+                <h2 class="heading-tertiary">Input:</h2>
+                <p class="hero-description">
+
+                    subject = "Java" <br>
+                    print("Python class is happening today") <br>
+                    print("%s class is happening today"% subject) <br>
+                </p>
+            </div>
+            <div>
+                <h2 class="heading-tertiary">Output:</h2>
+                <p class="hero-description">
+                    Python class is happening today <br>
+                    Java class is happening today <br>
+                </p>
+            </div>
+        </div>
+        <div class="input-output-block " id="second">
+            <h2 class="heading-secondary">Example 2</h2>
+            <div class="input">
+                <h2 class="heading-tertiary">Input:</h2>
+                <p class="hero-description">
+                    name = "Viky" <br>
+                    age = 32 <br>
+                    print("I'm Venkatesh and age is 26") <br>
+                    print("I'm %s and age is %d"%(name, age)) <br>
+                </p>
+            </div>
+            <div>
+                <h2 class="heading-tertiary">Output:</h2>
+                <p class="hero-description">
+
+                    I'm Venkatesh and age is 26 <br>
+                    I'm Viky and age is 32 <br>
+                </p>
+            </div>
+        </div>
+        <div class="input-output-block " id="third">
+            <h2 class="heading-secondary">Example 3</h2>
+            <div class="input">
+                <h2 class="heading-tertiary">Input:</h2>
+                <p class="hero-description">
+                    name = "Venkatesh" <br>
+                    city = "Chennai" <br>
+                    print("I'm %s and I live in %s"%(name, city)) <br>
+                    print("I'm %s and I live in %s"%(city, name)) </p>
+            </div>
+            <div>
+                <h2 class="heading-tertiary">Output:</h2>
+                <p class="hero-description">
+                    I'm Venkatesh and I live in Chennai <br>
+                    I'm Chennai and I live in Venkatesh <br>
+                </p>
+            </div>
+        </div>
+        <div class="input-output-block " id="forth">
+            <h2 class="heading-secondary">Example 4</h2>
+            <div class="input">
+                <h2 class="heading-tertiary">Input:</h2>
+                <p class="hero-description">
+                    print("I'm %s and age is %s"%(name, age)) <br>
+                </p>
+            </div>
+            <div>
+                <h2 class="heading-tertiary">Output:</h2>
+                <p class="hero-description">
+
+                    I'm Venkatesh and age is 32 <br>
+                </p>
+            </div>
+
+        </div>
+        <div class="input-output-block " id="fifth">
+            <h2 class="heading-secondary">Example 5</h2>
+            <div class="input">
+                <h2 class="heading-tertiary">Input:</h2>
+                <p class="hero-description">
+                    print("I'm %d and age is %s"%(name, <br>
+                    age))-------------------------------------------------------------------------- <br>
+
+                </p>
+            </div>
+            <div>
+                <h2 class="heading-tertiary">Output:</h2>
+                <p class="hero-description">
+                    TypeError <br>
+                    Traceback (most recent call last) <br>
+                    ipython-input-74-c82e47096896 in &lt;cell line: 1>()----> 1 print("I'm %d and age is %s"%(name, <br>
+                    age)) <br>
+                    TypeError: %d format: a real number is required, not str <br>
+
+
+                </p>
+            </div>
+        </div>
+        <div class="input-output-block " id="sixth">
+            <h2 class="heading-secondary">Example 5</h2>
+            <div class="input">
+                <h2 class="heading-tertiary">Input:</h2>
+                <p class="hero-description">
+                    score = 12.5 <br>
+                    score_1 = 12 <br>
+                    score_2 = 12.936687687687 <br>
+                    print("Score is %f "%score) <br>
+                    print("Score 1 is %f "%score_1) <br>
+                    print("Score 2 is %f "%score_2) <br>
+                    print("Score is %d "%score) <br>
+                    print("Score 1 is %d "%score_1) <br>
+                    print("Score 2 is %d "%score_2) <br>
+                    print("Score is %s "%score) <br>
+                    print("Score 1 is %s "%score_1) <br>
+                    print("Score 2 is %s "%score_2) <br></p>
+            </div>
+            <div>
+                <h2 class="heading-tertiary">Output:</h2>
+                <p class="hero-description">
+                    Score is 12.500000 <br>
+                    Score 1 is 12.000000 <br>
+
+                    Score 2 is 12.936688 <br>
+                    Score is 12 <br>
+                    Score 1 is 12 <br>
+                    Score 2 is 12 <br>
+                    Score is 12.5 <br>
+                    Score 1 is 12 <br>
+                    Score 2 is 12.936687687687 <br> </p>
+                </p>
+            </div>
+        </div>
+        <div class="input-output-block " id="seventh">
+            <h2 class="heading-secondary">Example 7</h2>
+            <div class="input">
+                <h2 class="heading-tertiary">Input:</h2>
+                <p class="hero-description">
+                    String Formatting <br>
+
+                    1. Using % Operator (old method) <br>
+                    2. str.format() method <br>
+                    3. f-strings <br>
+                    <br>
+                    name = "Venky" <br>
+                    age = 26 <br>
+                    print("My name is %s and I'm %d years old"%(name, age)) <br>
+                    # % operator <br>
+                </p>
+            </div>
+            <div>
+                <h2 class="heading-tertiary">Output:</h2>
+                <p class="hero-description">
+                    My name is Venky and I'm 26 years old <br>
+                </p>
+            </div>
+        </div>
+        <div class="input-output-block " id="eight">
+            <h2 class="heading-secondary">Example 8</h2>
+            <div class="input">
+                <h2 class="heading-tertiary">Input:</h2>
+                <p class="hero-description">
+                    # default arguments <br>
+                    print("My name is {} and I'm {} years old.".format(name, age)) <br>
+                    # positional arguments <br>
+                    print("My name is {1} and I'm {0} years old.".format(name, age)) <br>
+                    print("My name is {1} and I'm {1} years old.".format(name, age)) <br>
+                    print("My name is {0} and I'm {0} years old.".format(name, age)) <br>
+                    print("My name is {0} and I'm {2} years old.".format(name, age, "29")) <br>
+
+                </p>
+            </div>
+            <div>
+                <h2 class="heading-tertiary">Output:</h2>
+                My name is Venky and I'm 26 years old. <br>
+                My name is 26 and I'm Venky years old. <br>
+                My name is 26 and I'm 26 years old. <br>
+                My name is Venky and I'm Venky years old. <br>
+                My name is Venky and I'm 29 years old. <br>
+                <p class="hero-description">
+                </p>
+            </div>
+        </div>
+        <div class="input-output-block " id="ninth">
+            <h2 class="heading-secondary">Example 9</h2>
+            <div class="input">
+                <h2 class="heading-tertiary">Input:</h2>
+                <p class="hero-description">
+                    # keyword arguments <br>
+                    print("My name is {name} and I'm {age} years old".format(age=26, name="Venky")) <br>
+                    # mixed arguments <br>
+                    print("My name is {} and I'm {age} years old.".format("Venky", age=26)) <br>
+                    print("My name is {0} and I'm {age} years old.".format("Venky", age=26)) <br>
+                    print("My name is {1} and I'm {age} years old.".format("Venky", "Viky", age=26)) <br>
+
+                </p>
+
+            </div>
+            <div>
+                <h2 class="heading-tertiary">Output:</h2>
+                <p class="hero-description">
+                    My name is Venky and I'm 26 years old <br>
+                    My name is Venky and I'm 26 years old. <br>
+                    My name is Venky and I'm 26 years old. <br>
+                    My name is Viky and I'm 26 years old. <br>
+                    print("My name is {1} and I'm {age} years old.".format(age=26, "Venky")) <br>
+                    File <br>
+                    "&lt;ipython-input-130-0e83ac004fef>", line 1 <br>
+                    print("My name is {1} and I'm {age} years old.".format(age=26, "Venky")) <br>
+                    ^ <br>
+                    SyntaxError: positional argument follows keyword argument <br>
+
+                </p>
+            </div>
+        </div>
+        <div class="input-output-block " id="tenth">
+            <h2 class="heading-secondary">Example 10</h2>
+            <div class="input">
+                <h2 class="heading-tertiary">Input:</h2>
+                <p class="hero-description">
+
+                    # integer arguments <br>
+                    print("Class ends around {:d} AM".format(9)) <br>
+                </p>
+
+            </div>
+            <div>
+                <h2 class="heading-tertiary">Output:</h2>
+                <p class="hero-description">
+                    Class ends around 9 AM <br>
+                </p>
+            </div>
+        </div>
+        <div class="input-output-block " id="eleven">
+            <h2 class="heading-secondary">Example 11</h2>
+            <div class="input">
+                <h2 class="heading-tertiary">Input:</h2>
+                <p class="hero-description">
+
+                    # integer arguments <br>
+                    print("Class ends around {:d} AM".format(9)) <br>
+                    Class ends around 9 AM <br>
+                    print("Class ends around {:d} <br>
+                    AM".format(9.30))-------------------------------------------------------------------------- <br>
+
+                </p>
+
+            </div>
+            <div>
+                <h2 class="heading-tertiary">Output:</h2>
+                <p class="hero-description">
+                    ValueError <br>
+                    Traceback (most recent call last) <br>
+                    &lt;ipython-input-134-aaf4d4ba707e> in &lt;cell line: 1>()----> <br>
+                    1 print("Class ends around {:d}AM".format(9.30))
+                    ValueError: Unknown format code 'd' for object of type 'float' <br>
+                </p>
+            </div>
+        </div>
+        <div class="input-output-block " id="twelve">
+            <h2 class="heading-secondary">Example 11</h2>
+            <div class="input">
+                <h2 class="heading-tertiary">Input:</h2>
+                <p class="hero-description">
+
+                    # float arguments <br>
+                    print("Float value is given by {:f} ".format(120.4568976)) <br>
+                    print("Float round off to 2 digits: {:.2f} ".format(120.4568976)) <br>
+                    print("Float round off to 2 digits: {:.3f} ".format(120.4568976)) <br>
+                </p>
+
+            </div>
+            <div>
+                <h2 class="heading-tertiary">Output:</h2>
+                <p class="hero-description">
+                    Float value is given by 120.456898 <br>
+                    Float round off to 2 digits: 120.46 <br>
+                    Float round off to 2 digits: 120.457 <br>
+                </p>
+            </div>
+        </div>
+
+
+    </main>
+</body>
+
+</html>

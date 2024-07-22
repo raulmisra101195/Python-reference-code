@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <style></style>
+</head>
+
+<body class="container ">
+    <header>
+        <div class="header-1">
+            <div class="python">Python</div>
+            <nav class="navigation__nav">
+                <ul class="navigation__list">
+                    <li class="navigation__item"><a href="./1.html">All</a></li>
+                    <li class="navigation__item"><a href="./1.html">Fundamental</a></li>
+                    <li class="navigation__item"><a href="./1.html">String</a></li>
+                    <li class="navigation__item"><a href="./1.html">List</a></li>
+                    <li class="navigation__item"><a href="./1.html">Basics</a></li>
+                    <li class="navigation__item"><a href="./1.html">Dictionary</a></li>
+                    <li class="navigation__item"><a href="./1.html">OOPS</a></li>
+                    <li class="navigation__item"><a href="./1.html">Others</a></li>
+                </ul>
+            </nav>
+        </div>
+
+    </header>
+    <main class="container">
+
+
+        <h1 class="heading-primary">continue
+
+        </h1>
+        <ul class="list-examples">
+            <li><a href="#first">Ex 1</a></li>
+            <li><a href="#second">Ex 2</a></li>
+            <li class="navigation__item"><a href="./1.html">Home</a></li>
+        </ul>
+        <div class="input-output-block first" id="first">
+            <h2 class="heading-secondary">Example 1</h2>
+            <div class="input">
+                <h2 class="heading-tertiary">Input:</h2>
+                <p class="hero-description">
+                    l = [12,32,0,-10,-5,200,100] <br>
+                    non_negative_value = 0 <br>
+                    for value in l: <br>
+                    &nbsp;print("value: ", value) <br>
+                    &nbsp;if value&lt;0: <br>
+                    &nbsp;&nbsp; continue <br>
+                    &nbsp;non_negative_value +=value <br>
+                    &nbsp;print("curr non negative value: ", <br>
+                    non_negative_value) <br>
+                    &nbsp; print(" final non_negative_value outside for loop: <br> ",non_negative_value)
+
+                </p>
+            </div>
+            <div>
+                <h2 class=" heading-tertiary">Output:</h2>
+                <p class="hero-description">
+                    value: 12 <br>
+                    curr non negative value: 12 <br>
+                    value: 32 <br>
+                    curr non negative value: 44 <br>
+                    value: 0 <br>
+                    curr non negative value: 44 <br>
+                    value: -10 <br>
+                    value: -5 <br>
+                    value: 200 <br>
+                    curr non negative value: 244 <br>
+                    value: 100 <br>
+                    curr non negative value: 344 <br>
+                    final non_negative_value outside for loop: 344 <br>
+                </p>
+            </div>
+        </div>
+        <div class="input-output-block " id="second">
+            <h2 class="heading-secondary">Example 2</h2>
+            <div class="input">
+                <h2 class="heading-tertiary">Input:</h2>
+                <p class="hero-description">
+                    l = [1,2,3,4,5,6,5,4,2] <br>
+                    for value in l: <br>
+                    &nbsp;print("value: -->",value) <br>
+                    &nbsp;if value==5: <br>
+                    &nbsp;&nbsp;continue <br>
+                    &nbsp;print("VENKY") <br>
+                    &nbsp;print("Python") <br>
+                    &nbsp;print("ANy value") <br>
+                </p>
+            </div>
+            <div>
+                <h2 class="heading-tertiary">Output:</h2>
+                <p class="hero-description">
+
+                    value: --> 1 <br>
+                    VENKY <br>
+                    Python <br>
+                    ANy value <br>
+                    value: --> 2 <br>
+                    VENKY <br>
+                    Python <br>
+                    ANy value <br>
+                    value: --> 3 <br>
+                    VENKY <br>
+                    Python <br>
+                    ANy value <br>
+                    value: --> 4 <br>
+                    VENKY <br>
+                    Python <br>
+                    ANy value <br>
+                    value: --> 5 <br>
+                    value: --> 6 <br>
+                    VENKY <br>
+                    Python <br>
+                    ANy value <br>
+                    value: --> 5 <br>
+                    value: --> 4 <br>
+                    VENKY <br>
+                    Python <br>
+                    ANy value <br>
+                    value: --> 2 <br>
+                    VENKY <br>
+                    Python <br>
+                    ANy value <br>
+                </p>
+            </div>
+        </div>
+    </main>
+</body>
+
+</html>

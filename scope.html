@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <style></style>
+</head>
+
+<body class="container ">
+    <header>
+        <div class="header-1">
+            <div class="python">Python</div>
+            <nav class="navigation__nav">
+                <ul class="navigation__list">
+                    <li class="navigation__item"><a href="./1.html">All</a></li>
+                    <li class="navigation__item"><a href="./1.html">Fundamental</a></li>
+                    <li class="navigation__item"><a href="./1.html">String</a></li>
+                    <li class="navigation__item"><a href="./1.html">List</a></li>
+                    <li class="navigation__item"><a href="./1.html">Basics</a></li>
+                    <li class="navigation__item"><a href="./1.html">Dictionary</a></li>
+                    <li class="navigation__item"><a href="./1.html">OOPS</a></li>
+                    <li class="navigation__item"><a href="./1.html">Others</a></li>
+                </ul>
+            </nav>
+        </div>
+
+    </header>
+    <main class="container">
+
+
+        <h1 class="heading-primary">scope
+
+        </h1>
+        <ul class="list-examples">
+            <li><a href="#first">Ex 1</a></li>
+            <li><a href="#second">Ex 2</a></li>
+            <li><a href="#third">Ex 3</a></li>
+            <li><a href="#forth">Ex 4</a></li>
+            <li><a href="#fifth">Ex 5</a></li>
+            <li><a href="#sixth">Ex 6</a></li>
+            <li><a href="#seventh">Ex 7</a></li>
+            <li><a href="#eigth">Ex 8</a></li>
+            <li><a href="#ninth">Ex 9</a></li>
+            <li><a href="#tenth">Ex 10</a></li <li class="navigation__item"><a href="./1.html">Home</a></li>>
+        </ul>
+        <div class="input-output-block first" id="first">
+            <h2 class="heading-secondary">Example 1</h2>
+            <div class="input">
+                <h2 class="heading-tertiary">Input:</h2>
+                <p class="hero-description">
+                    # Global variables vs Local Variables <br>
+                    def func_a(): <br>
+                    &nbsp; # local_variable <br>
+                    &nbsp; a = 100 <br>
+                    &nbsp; print("Local Variable - a: ", a) <br>
+                    func_a() <br>
+                    print("Access Local Variable - a from outside the function: ", a) <br>
+                </p>
+            </div>
+            <div>
+                <h2 class="heading-tertiary">Output:</h2>
+                <p class="hero-description">
+                    Local Variable - a: 100 <br>
+                    NameError: name 'a' is not defined <br>
+                </p>
+            </div>
+        </div>
+        <div class="input-output-block " id="second">
+            <h2 class="heading-secondary">Example 2</h2>
+            <div class="input">
+                <h2 class="heading-tertiary">Input:</h2>
+                <p class="hero-description">
+                    # global variable <br>
+                    b = 100 # global variable <br>
+                    def func_b(): <br>
+                    &nbsp;print("Access Global Variable -b Inside Function: ", b) <br>
+                    func_b() <br>
+                    print("Access Global Variable - b Outside Function: ", b) <br>
+                    def func_new(): <br>
+                    &nbsp;print("Accessing b: ", b) <br>
+                    func_new() <br>
+                </p>
+            </div>
+            <div>
+                <h2 class="heading-tertiary">Output:</h2>
+                <p class="hero-description">
+                    Access Global Variable -b Inside Function: 100 <br>
+                    Access Global Variable - b Outside Function: 100 <br>
+                    Accessing b: 100 <br>
+                </p>
+            </div>
+        </div>
+        <div class="input-output-block " id="third">
+            <h2 class="heading-secondary">Example 3</h2>
+            <div class="input">
+                <h2 class="heading-tertiary">Input:</h2>
+                <p class="hero-description">
+                    global variable vs local variable <br>
+                    def func_c(): <br>
+                    &nbsp;c = 200 # treated as local variable <br>
+                    &nbsp; print("What will get printed: ",c) <br>
+                    c = 1000 <br>
+                    print("Global Variable c : ", c) <br>
+                    func_c() <br>
+                    print("Global Variable c: ", c) <br></p>
+            </div>
+            <div>
+                <h2 class="heading-tertiary">Output:</h2>
+                <p class="hero-description">
+                    Global Variable c : 1000 <br>
+                    What will get printed: 200 <br>
+                    Global Variable c: 1000 <br>
+
+                </p>
+            </div>
+        </div>
+        <div class="input-output-block " id="forth">
+            <h2 class="heading-secondary">Example 4</h2>
+            <div class="input">
+                <h2 class="heading-tertiary">Input:</h2>
+                <p class="hero-description">
+                    # purpose of "global" keyword <br>
+                    def func_d(): <br>
+                    &nbsp;print("Global Variable d : ", d) <br>
+                    &nbsp; d += 500 <br>
+                    &nbsp;print("Changing d inside the function: ",d) <br>
+                    d = 1000 <br>
+                    print("Initializing d: -->", d) <br>
+                    d += 500 <br>
+                    print("Modifying d: -->", d) <br>
+                    func_d() <br>
+                    print("Outside function, d changed to : ", d) <br>
+                </p>
+            </div>
+            <div>
+                <h2 class="heading-tertiary">Output:</h2>
+                <p class="hero-description">
+                    Initializing d: --> 1000 <br>
+                    Modifying d: --> 1500 <br>
+
+                    def func_d():----> 4 <br>
+                    5 <br>
+                    6 <br>
+                    print("Global Variable d : ", d) <br>
+                    d += 500 <br>
+                    print("Changing d inside the function: ",d) <br>
+                    UnboundLocalError: local variable 'd' referenced before assignment <br>
+                </p>
+            </div>
+
+        </div>
+        <div class="input-output-block " id="fifth">
+            <h2 class="heading-secondary">Example 5</h2>
+            <div class="input">
+                <h2 class="heading-tertiary">Input:</h2>
+                <p class="hero-description"></p>
+            </div>
+            <div>
+                <h2 class="heading-tertiary">Output:</h2>
+                <p class="hero-description">
+                </p>
+            </div>
+        </div>
+        <div class="input-output-block " id="sixth">
+            <h2 class="heading-secondary">Example 5</h2>
+            <div class="input">
+                <h2 class="heading-tertiary">Input:</h2>
+                <p class="hero-description">
+                    def func_d(d): <br>
+                    &nbsp; print("Global Variable d : ", d) <br>
+                    &nbsp; d += 500 <br>
+                    &nbsp; print("Changing d inside the function: ",d) <br>
+                    d = 1000 <br>
+                    print("Initializing d: -->", d) <br>
+                    d += 500 <br>
+                    print("Modifying d: -->", d) <br>
+                    func_d(d) <br>
+                    print("Outside function, d changed to : ", d) <br> </p>
+            </div>
+            <div>
+                <h2 class="heading-tertiary">Output:</h2>
+                <p class="hero-description">
+                    Initializing d: --> 1000 <br>
+                    Modifying d: --> 1500 <br>
+                    Global Variable d : 1500 <br>
+                    Changing d inside the function: 2000 <br>
+                    Outside function, d changed to : 1500 <br> </p>
+                </p>
+            </div>
+        </div>
+        <div class="input-output-block " id="seventh">
+            <h2 class="heading-secondary">Example 7</h2>
+            <div class="input">
+                <h2 class="heading-tertiary">Input:</h2>
+                <p class="hero-description">
+                    def func_d(): <br>
+                    &nbsp;global d <br>
+                    &nbsp;print("Global Variable d : ", d) <br>
+                    &nbsp;d += 500 <br>
+                    &nbsp; print("Changing d inside the function: ",d) <br>
+                    d = 1000 <br>
+                    print("Initializing d: -->", d) <br>
+                    d += 500 <br>
+                    print("Modifying d: -->", d) <br>
+                    func_d() <br>
+                    print("Outside function, d changed to : ", d) <br>
+                </p>
+            </div>
+            <div>
+                <h2 class="heading-tertiary">Output:</h2>
+                <p class="hero-description">
+                    Initializing d: --> 1000 <br>
+                    Modifying d: --> 1500 <br>
+                    Global Variable d : 1500 <br>
+                    Changing d inside the function: 2000 <br>
+                    Outside function, d changed to : 2000 <br>
+
+                </p>
+            </div>
+        </div>
+        <div class="input-output-block " id="eight">
+            <h2 class="heading-secondary">Example 8</h2>
+            <div class="input">
+                <h2 class="heading-tertiary">Input:</h2>
+                <p class="hero-description">
+                    def func_d(): <br>
+                    &nbsp;print("Global Variable d : ", d) <br>
+                    &nbsp;d += 500 <br>
+                    &nbsp; print("Changing d inside the function: ",d) <br>
+                    d = 1000 <br>
+                    print("Initializing d: -->", d) <br>
+                    d += 500 <br>
+                    print("Modifying d: -->", d) <br>
+                    func_d() <br>
+                    print("Outside function, d changed to : ", d) <br>
+                </p>
+            </div>
+            <div>
+                <h2 class="heading-tertiary">Output:</h2>
+
+
+                <p class="hero-description">
+                    Initializing d: --> 1000 <br>
+                    Modifying d: --> 1500 <br>
+                    <br>
+                    8 <br>
+                    d += 500 <br>
+                    9 <br>
+                    print("Modifying d: -->", d)---> 10 func_d() <br>
+                    <br>
+                    print("Outside function, d changed to : ", d) <br>
+                    in func_d() <br>
+                    1 <br>
+                    def func_d():----> 2 <br>
+                    3 <br>
+                    4 <br>
+                    5 <br>
+                    print("Global Variable d : ", d) <br>
+                    d += 500 <br>
+                    print("Changing d inside the function: ",d) <br>
+                    UnboundLocalError: local variable 'd' referenced before assignment <br>
+                </p>
+            </div>
+        </div>
+        <div class="input-output-block " id="ninth">
+            <h2 class="heading-secondary">Example 9</h2>
+            <div class="input">
+                <h2 class="heading-tertiary">Input:</h2>
+                <p class="hero-description">
+                    def func_d(): <br>
+                    &nbsp;d = 1500 <br>
+                    &nbsp; print("Local Variable d : ", d) <br>
+                    &nbsp; d += 500 <br>
+                    &nbsp;print("Changing d inside the function: ",d) <br>
+                    d = 1000 <br>
+                    print("Initializing d: -->", d) <br>
+                    d += 500 <br>
+                    print("Modifying d: -->", d) <br>
+                    func_d() <br>
+                    print("Outside function, d changed to : ", d) <br>
+                </p>
+
+            </div>
+            <div>
+                <h2 class="heading-tertiary">Output:</h2>
+                <p class="hero-description">
+                    Initializing d: --> 1000 <br>
+                    Modifying d: --> 1500 <br>
+                    Local Variable d : 1500 <br>
+                    Changing d inside the function: 2000 <br>
+                    Outside function, d changed to : 1500 <br>
+
+                </p>
+            </div>
+        </div>
+        <div class="input-output-block " id="tenth">
+            <h2 class="heading-secondary">Example 10</h2>
+            <div class="input">
+                <h2 class="heading-tertiary">Input:</h2>
+                <p class="hero-description">
+                    def func_d(): <br>
+                    &nbsp; e = d + 500 <br>
+                    &nbsp;print("Changing d inside the function: ",d) <br>
+                    &nbsp;print("Creating a new variable e: ", e) <br>
+                    d = 1000 <br>
+                    print("Initializing d: -->", d) <br>
+                    d += 500 <br>
+                    print("Modifying d: -->", d) <br>
+                    func_d() <br>
+                    print("Outside function, d changed to : ", d) <br>
+                </p>
+
+            </div>
+            <div>
+                <h2 class="heading-tertiary">Output:</h2>
+                <p class="hero-description">
+                    Initializing d: --> 1000 <br>
+                    Modifying d: --> 1500 <br>
+                    Changing d inside the function: 1500 <br>
+                    Creating a new variable e: 2000 <br>
+                    Outside function, d changed to : 1500 <br>
+                </p>
+            </div>
+        </div>
+    </main>
+</body>
+
+</html>

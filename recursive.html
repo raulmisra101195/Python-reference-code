@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <style></style>
+</head>
+
+<body class="container ">
+    <header>
+        <div class="header-1">
+            <div class="python">Python</div>
+            <nav class="navigation__nav">
+                <ul class="navigation__list">
+                    <li class="navigation__item"><a href="./1.html">All</a></li>
+                    <li class="navigation__item"><a href="./1.html">Fundamental</a></li>
+                    <li class="navigation__item"><a href="./1.html">String</a></li>
+                    <li class="navigation__item"><a href="./1.html">List</a></li>
+                    <li class="navigation__item"><a href="./1.html">Basics</a></li>
+                    <li class="navigation__item"><a href="./1.html">Dictionary</a></li>
+                    <li class="navigation__item"><a href="./1.html">OOPS</a></li>
+                    <li class="navigation__item"><a href="./1.html">Others</a></li>
+                </ul>
+            </nav>
+        </div>
+
+    </header>
+    <main class="container">
+
+
+        <h1 class="heading-primary">recursive
+
+        </h1>
+        <ul class="list-examples">
+            <li><a href="#first">Ex 1</a></li>
+            <li><a href="#second">Ex 2</a></li>
+            <li><a href="#third">Ex 3</a></li>
+            <li><a href="#forth">Ex 4</a></li>
+            <li><a href="#fifth">Ex 5</a></li>
+            <li><a href="#sixth">Ex 6</a></li>
+            <li><a href="#seventh">Ex 7</a></li>
+            <li><a href="#eigth">Ex 8</a></li>
+            <li><a href="#ninth">Ex 9</a></li>
+            <li><a href="#tenth">Ex 10</a></li>
+            <li class="navigation__item"><a href="./1.html">Home</a></li>
+        </ul>
+        <div class="input-output-block first" id="first">
+            <h2 class="heading-secondary">Example 1</h2>
+            <div class="input">
+                <h2 class="heading-tertiary">Input:</h2>
+                <p class="hero-description">
+                    def func_name(params): <br>
+                    &nbsp;# code <br>
+                    &nbsp; pass <br>
+                </p>
+            </div>
+            <div>
+                <h2 class="heading-tertiary">Output:</h2>
+                <p class="hero-description">
+                </p>
+            </div>
+        </div>
+        <div class="input-output-block " id="second">
+            <h2 class="heading-secondary">Example 2</h2>
+            <div class="input">
+                <h2 class="heading-tertiary">Input:</h2>
+                <p class="hero-description">
+                    def func_new(a): <br>
+                    &nbsp;print("Value of a : -->",a) <br>
+                    &nbsp;if a&lt;=0: <br>
+                    &nbsp;&nbsp;return a <br>
+                    &nbsp;else: <br>
+                    &nbsp;&nbsp; return func_new(a-1) <br>
+                    ret_val=func_new(5) <br>
+                    print("return val: -->",ret_val)
+                </p>
+            </div>
+            <div>
+                <h2 class="heading-tertiary">Output:</h2>
+                <p class="hero-description">
+                    Value of a : --> 5 <br>
+                    Value of a : --> 4 <br>
+                    Value of a : --> 3 <br>
+                    Value of a : --> 2 <br>
+                    Value of a : --> 1 <br>
+                    Value of a : --> 0 <br>
+                    return val: --> 0 <br>
+                </p>
+            </div>
+        </div>
+        <div class="input-output-block " id="third">
+            <h2 class="heading-secondary">Example 3</h2>
+            <div class="input">
+                <h2 class="heading-tertiary">Input:</h2>
+                <p class="hero-description">
+                    def factorial(n): <br>
+                    &nbsp; print("value of n: -->",n) <br>
+                    &nbsp; if n==0: <br>
+                    &nbsp;&nbsp;return 1 <br>
+                    &nbsp;return n*factorial(n-1) <br>
+                    ret_val = factorial(5) <br>
+                    print("ret val: -->", ret_val) <br>
+                </p>
+            </div>
+            <div>
+                <h2 class="heading-tertiary">Output:</h2>
+                <p class="hero-description">
+                    value of n: --> 5 <br>
+                    value of n: --> 4 <br>
+                    value of n: --> 3 <br>
+                    value of n: --> 2 <br>
+                    value of n: --> 1 <br>
+                    value of n: --> 0 <br>
+                    ret val: --> 120 <br>
+
+                </p>
+            </div>
+        </div>
+        <div class="input-output-block " id="forth">
+            <h2 class="heading-secondary">Example 4</h2>
+            <div class="input">
+                <h2 class="heading-tertiary">Input:</h2>
+                <p class="hero-description">
+                    def sum_n_numbers(n): <br>
+                    &nbsp; print("n val : -->",n) <br>
+                    &nbsp; if n==0: <br>
+                    &nbsp;&nbsp;return 0 <br>
+                    &nbsp; return n+sum_n_numbers(n-1) <br>
+                    ret_val = sum_n_numbers(5) <br>
+                    print(ret_val) <br>
+                </p>
+            </div>
+            <div>
+                <h2 class="heading-tertiary">Output:</h2>
+                <p class="hero-description">
+                    n val : --> 5 <br>
+                    n val : --> 4 <br>
+                    n val : --> 3 <br>
+                    n val : --> 2 <br>
+                    n val : --> 1 <br>
+                    n val : --> 0 <br>
+                    15 <br>
+                </p>
+            </div>
+
+        </div>
+        <div class="input-output-block " id="fifth">
+            <h2 class="heading-secondary">Example 5</h2>
+            <div class="input">
+                <h2 class="heading-tertiary">Input:</h2>
+                <p class="hero-description">
+                    def sum_n_numbers(n): <br>
+                    &nbsp;if n==0: <br>
+                    &nbsp;&nbsp; return 0 <br>
+                    &nbsp; print("n val : -->",n) <br>
+                    &nbsp; return n+sum_n_numbers(n-1) <br>
+                    ret_val = sum_n_numbers(5) <br>
+                    print(ret_val) <br>
+                </p>
+            </div>
+            <div>
+                <h2 class="heading-tertiary">Output:</h2>
+                <p class="hero-description">
+                    n val : --> 5 <br>
+                    n val : --> 4 <br>
+                    n val : --> 3 <br>
+                    n val : --> 2 <br>
+                    n val : --> 1 <br>
+                    15 <br>
+                </p>
+            </div>
+        </div>
+        <div class="input-output-block " id="sixth">
+            <h2 class="heading-secondary">Example 5</h2>
+            <div class="input">
+                <h2 class="heading-tertiary">Input:</h2>
+                <p class="hero-description">
+                    def sum_n_numbers(n): <br>
+                    &nbsp;if n==0: <br>
+                    &nbsp;&nbsp;return 0 <br>
+                    &nbsp;print("n val : -->",n) <br>
+                    &nbsp;return n+sum_n_numbers(n-1) <br>
+                    ret_val = sum_n_numbers(5) <br>
+                    print(ret_val) <br></p>
+            </div>
+            <div>
+                <h2 class="heading-tertiary">Output:</h2>
+                <p class="hero-description">
+                    n val : --> 5 <br>
+                    n val : --> 4 <br>
+                    n val : --> 3 <br>
+                    n val : --> 2 <br>
+                    n val : --> 1 <br>
+                    15 <br> </p>
+                </p>
+            </div>
+        </div>
+        <div class="input-output-block " id="seventh">
+            <h2 class="heading-secondary">Example 7</h2>
+            <div class="input">
+                <h2 class="heading-tertiary">Input:</h2>
+                <p class="hero-description">
+                    def head_recursion(n): <br>
+                    &nbsp;if n>0: <br>
+                    &nbsp;&nbsp;head_recursion(n-1) # head_recursion(1-1) <br>
+                    &nbsp;&nbsp;print("n val: -->", n) # print(1) <br>
+                </p>
+            </div>
+            <div>
+                <h2 class="heading-tertiary">Output:</h2>
+                <p class="hero-description">
+
+                </p>
+            </div>
+        </div>
+        <div class="input-output-block " id="eight">
+            <h2 class="heading-secondary">Example 8</h2>
+            <div class="input">
+                <h2 class="heading-tertiary">Input:</h2>
+                <p class="hero-description">
+                    def tail_recursion(n): <br>
+                    &nbsp;if n>0: <br>
+                    &nbsp;&nbsp;print("n val: -->", n) <br>
+                    &nbsp;&nbsp;tail_recursion(n-1) <br>
+                    head_recursion(5) <br>
+                </p>
+            </div>
+            <div>
+                <h2 class="heading-tertiary">Output:</h2>
+
+
+                <p class="hero-description">
+                    None <br>
+                    n val: --> 1 <br>
+                    None <br>
+                    n val: --> 2 <br>
+                    None <br>
+                    n val: --> 3 <br>
+                    None <br>
+                    n val: --> 4 <br>
+                    None <br>
+                    n val: --> 5 <br>
+                </p>
+            </div>
+        </div>
+        <div class="input-output-block " id="ninth">
+            <h2 class="heading-secondary">Example 9</h2>
+            <div class="input">
+                <h2 class="heading-tertiary">Input:</h2>
+                <p class="hero-description">
+                    tail_recursion(5) </p>
+
+            </div>
+            <div>
+                <h2 class="heading-tertiary">Output:</h2>
+                <p class="hero-description">
+                    n val: --> 5 <br>
+                    n val: --> 4 <br>
+                    n val: --> 3 <br>
+                    n val: --> 2 <br>
+                    n val: --> 1 <br>
+
+
+                </p>
+            </div>
+        </div>
+        <div class="input-output-block " id="tenth">
+            <h2 class="heading-secondary">Example 10</h2>
+            <div class="input">
+                <h2 class="heading-tertiary">Input:</h2>
+                <p class="hero-description">
+                    def normal_func(n): <br>
+                    &nbsp;if n>0: <br>
+                    &nbsp;&nbsp;print(1+5) <br>
+                    normal_func(0) <br>
+
+                    def finite_recursion(n): <br>
+                    &nbsp;print("val of n: -->", n) <br>
+                    &nbsp;if n==0: <br>
+                    &nbsp;&nbsp;return 0 <br>
+                    &nbsp;return finite_recursion(n-2) # direct recursion <br>
+
+                    finite_recursion(6) <br>
+                </p>
+
+            </div>
+            <div>
+                <h2 class="heading-tertiary">Output:</h2>
+                <p class="hero-description">
+                    val of n: --> 6 <br>
+                    val of n: --> 4 <br>
+                    val of n: --> 2 <br>
+                    val of n: --> 0 <br>
+                    0 <br>
+                </p>
+            </div>
+        </div>
+    </main>
+</body>
+
+</html>

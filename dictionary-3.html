@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <style></style>
+</head>
+
+<body class="container ">
+    <header>
+        <div class="header-1">
+            <div class="python">Python</div>
+            <nav class="navigation__nav">
+                <ul class="navigation__list">
+                    <li class="navigation__item"><a href="./1.html">All</a></li>
+                    <li class="navigation__item"><a href="./1.html">Fundamental</a></li>
+                    <li class="navigation__item"><a href="./1.html">String</a></li>
+                    <li class="navigation__item"><a href="./1.html">List</a></li>
+                    <li class="navigation__item"><a href="./1.html">Basics</a></li>
+                    <li class="navigation__item"><a href="./1.html">Dictionary</a></li>
+                    <li class="navigation__item"><a href="./1.html">OOPS</a></li>
+                    <li class="navigation__item"><a href="./1.html">Others</a></li>
+                </ul>
+            </nav>
+        </div>
+
+    </header>
+    <main class="container">
+
+
+        <h1 class="heading-primary">dictionary
+
+        </h1>
+        <ul class="list-examples">
+            <li><a href="#first">Ex 1</a></li>
+            <li><a href="#second">Ex 2</a></li>
+            <li><a href="#third">Ex 3</a></li>
+            <li><a href="#forth">Ex 4</a></li>
+            <li><a href="#fifth">Ex 5</a></li>
+            <li><a href="#sixth">Ex 6</a></li>
+            <li><a href="#seventh">Ex 7</a></li>
+            <li><a href="#eigth">Ex 8</a></li>
+            <li><a href="#ninth">Ex 9</a></li>
+            <li><a href="#tenth">Ex 10</a></li>
+            <li class="navigation__item"><a href="./1.html">Home</a></li>
+        </ul>
+        <div class="input-output-block first" id="first">
+            <h2 class="heading-secondary">Example 1</h2>
+            <div class="input">
+                <h2 class="heading-tertiary">Input:</h2>
+                <p class="hero-description">
+
+                    {'A': 100, 'B': 20, 'C': 30} <br>
+                    d1 = {'A': [10,20,30], 'B': 20, 'C': 30} <br>
+                    d2 = d1.copy() <br>
+                    print(d1) <br>
+                    print(d2) <br>
+                    d1['A'][1] = 100 <br>
+                    print(d1) <br>
+                    print(d2) <br>
+                </p>
+            </div>
+            <div>
+                <h2 class="heading-tertiary">Output:</h2>
+                <p class="hero-description">
+
+                    # to overcome this, u go to deepcopy <br>
+                    {'A': [10, 20, 30], 'B': 20, 'C': 30} <br>
+                    {'A': [10, 20, 30], 'B': 20, 'C': 30} <br>
+                    {'A': [10, 100, 30], 'B': 20, 'C': 30} <br>
+                    {'A': [10, 100, 30], 'B': 20, 'C': 30} <br>
+                </p>
+            </div>
+        </div>
+        <div class="input-output-block " id="second">
+            <h2 class="heading-secondary">Example 2</h2>
+            <div class="input">
+                <h2 class="heading-tertiary">Input:</h2>
+                <p class="hero-description">
+                    import copy <br>
+                    d1 = {'A': [10,20,30], 'B': 20, 'C': 30} <br>
+                    d2 = copy.deepcopy(d1) <br>
+                    print(d1) <br>
+                    print(d2) <br>
+                    d1['A'][1] = 100 <br>
+                    print(d1) <br>
+                    print(d2) <br>
+                </p>
+            </div>
+            <div>
+                <h2 class="heading-tertiary">Output:</h2>
+                <p class="hero-description">
+
+
+                    {'A': [10, 20, 30], 'B': 20, 'C': 30} <br>
+                    {'A': [10, 20, 30], 'B': 20, 'C': 30} <br>
+                    {'A': [10, 100, 30], 'B': 20, 'C': 30} <br>
+                    {'A': [10, 20, 30], 'B': 20, 'C': 30} <br>
+                </p>
+            </div>
+        </div>
+        <div class="input-output-block " id="third">
+            <h2 class="heading-secondary">Example 3</h2>
+            <div class="input">
+                <h2 class="heading-tertiary">Input:</h2>
+                <p class="hero-description">
+                    d = {'a': 10, 'b': 20, 'c': 30} <br>
+                    d_2 = dict(d) <br>
+                    print(d) <br>
+                    print(d_2) <br>
+                    d['a'] = 100 <br>
+                    print(d) <br>
+                    print(d_2) <br>
+                </p>
+            </div>
+            <div>
+                <h2 class="heading-tertiary">Output:</h2>
+                <p class="hero-description">
+                    {'a': 10, 'b': 20, 'c': 30} <br>
+                    {'a': 10, 'b': 20, 'c': 30} <br>
+                    {'a': 100, 'b': 20, 'c': 30} <br>
+                    {'a': 10, 'b': 20, 'c': 30} <br>
+                </p>
+            </div>
+        </div>
+        <div class="input-output-block " id="forth">
+            <h2 class="heading-secondary">Example 4</h2>
+            <div class="input">
+                <h2 class="heading-tertiary">Input:</h2>
+                <p class="hero-description">
+                    d = {'a': [100,200,300], 'b': 20, 'c': 30} <br>
+                    d_2 = dict(d) # similar to d.copy() method <br>
+                    print(d) <br>
+                    print(d_2) <br>
+                    d['a'][1] = 1000 <br>
+                    print(d) <br>
+                    print(d_2) <br>
+                </p>
+            </div>
+            <div>
+                <h2 class="heading-tertiary">Output:</h2>
+                <p class="hero-description">
+                    {'a': [100, 200, 300], 'b': 20, 'c': 30} <br>
+                    {'a': [100, 200, 300], 'b': 20, 'c': 30} <br>
+                    {'a': [100, 1000, 300], 'b': 20, 'c': 30} <br>
+                    {'a': [100, 1000, 300], 'b': 20, 'c': 30} <br>
+                </p>
+            </div>
+
+        </div>
+        <div class="input-output-block " id="fifth">
+            <h2 class="heading-secondary">Example 5</h2>
+            <div class="input">
+                <h2 class="heading-tertiary">Input:</h2>
+                <p class="hero-description">
+                    d = {"a": 1, "b": 2} <br>
+                    print("d") <br>
+                    print(d) <br>
+                    print(id(d)) <br>
+
+
+                    d2 = d <br>
+                    print("d2") <br>
+                    print(d2) <br>
+                    print(id(d2)) <br>
+                    d3 = d.copy() <br>
+                    print("d3") <br>
+                    print(d3) <br>
+                    print(id(d3)) <br>
+                    d4 = dict(d) <br>
+                    print("d4") <br>
+                    print(d4) <br>
+                    print(id(d4)) <br>
+                </p>
+            </div>
+            <div>
+                <h2 class="heading-tertiary">Output:</h2>
+                <p class="hero-description">
+                    d <br>
+                    {'a': 1, 'b': 2} <br>
+                    135765556866368 <br>
+                    d2 <br>
+                    {'a': 1, 'b': 2} <br>
+                    135765556866368 <br>
+                    d3 <br>
+                    {'a': 1, 'b': 2} <br>
+                    135765182817728 <br>
+                    d4 <br>
+                    {'a': 1, 'b': 2} <br>
+                    135765182768128 <br>
+                </p>
+            </div>
+        </div>
+        <div class="input-output-block " id="sixth">
+            <h2 class="heading-secondary">Example 5</h2>
+            <div class="input">
+                <h2 class="heading-tertiary">Input:</h2>
+                <p class="hero-description">
+
+                    print(d) <br>
+                    d['b'] = 1000 <br>
+                    print(d) <br>
+                    print(d2) <br>
+                    print(d3) <br>
+                    print(d4) <br>
+                </p>
+            </div>
+            <div>
+                <h2 class="heading-tertiary">Output:</h2>
+                <p class="hero-description">
+
+                    <br>
+                    # copy.deepcopy <br>
+                    {'a': 1, 'b': 2} <br>
+                    {'a': 1, 'b': 1000} <br>
+                    {'a': 1, 'b': 1000} <br>
+                    {'a': 1, 'b': 2} <br>
+                    {'a': 1, 'b': 2} <br>
+                </p>
+                </p>
+            </div>
+        </div>
+        <div class="input-output-block " id="seventh">
+            <h2 class="heading-secondary">Example 7</h2>
+            <div class="input">
+                <h2 class="heading-tertiary">Input:</h2>
+                <p class="hero-description">
+                </p>
+            </div>
+            <div>
+                <h2 class="heading-tertiary">Output:</h2>
+                <p class="hero-description">
+
+                </p>
+            </div>
+        </div>
+        <div class="input-output-block " id="eight">
+            <h2 class="heading-secondary">Example 8</h2>
+            <div class="input">
+                <h2 class="heading-tertiary">Input:</h2>
+                <p class="hero-description">
+                    # creating dictionary using iterables - list, tuples <br>
+                    d = dict([("a",2), ("b", 4), ("c", 10)]) <br>
+                    print(d) <br>
+                </p>
+            </div>
+            <div>
+                <h2 class="heading-tertiary">Output:</h2>
+
+
+                <p class="hero-description"> <br>
+                    {'a': 2, 'b': 4, 'c': 10} <br>
+                </p>
+            </div>
+        </div>
+        <div class="input-output-block " id="ninth">
+            <h2 class="heading-secondary">Example 9</h2>
+            <div class="input">
+                <h2 class="heading-tertiary">Input:</h2>
+                <p class="hero-description">
+
+                    d = dict([("a",2), ("b", 4), ("c", 10), ("d", 100, 2)]) <br>
+                    print(d) <br> </p>
+
+            </div>
+            <div>
+                <h2 class="heading-tertiary">Output:</h2>
+                <p class="hero-description">
+                    d = dict([("a",2), ("b", 4), ("c", 10), ("d", 100, 2)]) <br>
+                    ValueError: dictionary update sequence element #3 has length 3; 2 is required <br>
+                </p>
+            </div>
+        </div>
+        <div class="input-output-block " id="tenth">
+            <h2 class="heading-secondary">Example 10</h2>
+            <div class="input">
+                <h2 class="heading-tertiary">Input:</h2>
+                <p class="hero-description">
+
+                    d = dict([("a",2), ("b", 4), ("c", 10), (100,"d")]) <br>
+                    print(d) <br>
+                </p>
+
+            </div>
+            <div>
+                <h2 class="heading-tertiary">Output:</h2>
+                <p class="hero-description">
+                    {'a': 2, 'b': 4, 'c': 10, 100: 'd'} <br>
+                </p> <br>
+            </div>
+        </div>
+    </main>
+</body>
+
+</html>
